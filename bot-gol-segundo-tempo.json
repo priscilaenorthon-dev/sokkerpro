@@ -1,0 +1,206 @@
+{
+  "nome_bot": "Gol no Segundo Tempo (50-80min)",
+  "descricao": "Bot otimizado para detectar gols no segundo tempo entre os minutos 50 e 80, com odd mínima de 1.5",
+  
+  "configuracao_essencial": {
+    "faixa_minutos": {
+      "de": 50,
+      "ate": 80,
+      "justificativa": "Período após retorno do intervalo quando times buscam resultado, antes da pressão final (80-90min)"
+    },
+    "odd_minima_entrada": 1.5,
+    "valor_entrada": 0,
+    "valor_entrada_nota": "0 = apenas alertas sem contabilizar lucro/prejuízo. Defina um valor para ativar contabilização (ex: 10, 20, etc)",
+    "filtro_placar": "Qualquer",
+    "mercado_alvo": "Over 0.5 (2T) - Sair gol no segundo tempo"
+  },
+  
+  "condicoes_ao_vivo": {
+    "ataques": {
+      "ataques_perigosos_totais": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 8,
+        "justificativa": "No segundo tempo, mínimo de 8 ataques perigosos somados indica continuidade ofensiva"
+      },
+      "ataques_perigosos_3min": {
+        "aplicado_a": "Qualquer Time",
+        "minimo": 1.8,
+        "justificativa": "Intensidade ofensiva maior no 2T - times buscam resultado"
+      },
+      "ataques_perigosos_5min": {
+        "aplicado_a": "Qualquer Time",
+        "minimo": 1.2,
+        "justificativa": "Pressão ofensiva sustentada nos últimos 5 minutos"
+      },
+      "ataques_perigosos_10min": {
+        "aplicado_a": "Qualquer Time",
+        "minimo": 2.0,
+        "justificativa": "Média alta nos últimos 10min indica time pressionando forte"
+      }
+    },
+    
+    "chutes": {
+      "chutes_no_gol": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 3,
+        "justificativa": "No 2T, mínimo de 3 chutes no gol indica maior definição e urgência"
+      },
+      "chutes_dentro_area": {
+        "aplicado_a": "Qualquer Time",
+        "minimo": 3,
+        "justificativa": "Times mais ousados no 2T, buscam chutes dentro da área"
+      },
+      "total_chutes": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 6,
+        "justificativa": "Volume elevado de finalizações no segundo tempo"
+      },
+      "tentativas_gol": {
+        "aplicado_a": "Qualquer Time",
+        "minimo": 4,
+        "justificativa": "Tentativas de gol indicam agressividade ofensiva clara"
+      }
+    },
+    
+    "escanteios": {
+      "escanteios": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 3,
+        "justificativa": "Escanteios no 2T indicam pressão crescente, cada um aumenta ~2% chance de gol"
+      }
+    },
+    
+    "posse_passes": {
+      "barra_pressao": {
+        "aplicado_a": "Qualquer Time",
+        "minimo": 65,
+        "justificativa": "Barra de pressão mais alta no 2T indica time dominando em busca do gol"
+      }
+    },
+    
+    "defesa": {
+      "defesas_goleiro": {
+        "aplicado_a": "Qualquer Time",
+        "minimo": 2,
+        "justificativa": "Múltiplas defesas mostram finalizações perigosas reais acontecendo"
+      }
+    }
+  },
+  
+  "condicoes_pre_jogo": {
+    "medias_h2h_gols": {
+      "media_gols": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 2.5,
+        "justificativa": "Média alta de gols totais indica jogos abertos que tendem a ter gols no 2T"
+      },
+      "media_gols_1t": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 0.8,
+        "justificativa": "Se 1T teve gols, aumenta probabilidade de 2T também ter"
+      }
+    },
+    
+    "medias_h2h_chutes": {
+      "media_chutes_ao_gol": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 8,
+        "justificativa": "Times com boa média de chutes ao gol tendem a criar oportunidades no jogo todo"
+      },
+      "media_chutes_dentro_area": {
+        "aplicado_a": "Qualquer Time",
+        "minimo": 4,
+        "justificativa": "Finalizações dentro da área são mais efetivas"
+      }
+    },
+    
+    "medias_h2h_ataques": {
+      "media_ataques_perigosos": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 15,
+        "justificativa": "Média alta de ataques perigosos no jogo completo mostra times ofensivos"
+      }
+    },
+    
+    "prognosticos": {
+      "prognostico_over_15": {
+        "minimo": 60,
+        "justificativa": "Probabilidade de 2+ gols no jogo indica que haverá gols no 2T"
+      },
+      "prognostico_over_25": {
+        "minimo": 45,
+        "justificativa": "Jogos com expectativa de 3+ gols geralmente têm gols distribuídos, incluindo 2T"
+      },
+      "prognostico_ambas_marcam": {
+        "minimo": 50,
+        "justificativa": "Se ambas marcam, aumenta chance de gol no 2T (opcional mas recomendado)"
+      }
+    }
+  },
+  
+  "estrategia_recomendada": {
+    "tipo": "Entrada em Jogos Abertos e Dinâmicos no Segundo Tempo",
+    "pontos_fortes": [
+      "Faixa de tempo (50-80min) captura período de busca por resultado sem desespero final",
+      "Odd mínima de 1.5 garante boa relação risco/retorno",
+      "Filtros consideram intensidade maior do segundo tempo",
+      "Aceita qualquer placar, pois time perdendo ou empatando tende a atacar mais no 2T",
+      "Histórico valida tendência de jogos abertos e ofensivos"
+    ],
+    "diferencas_primeiro_tempo": [
+      "Valores mínimos mais altos para ataques e chutes (times mais ofensivos no 2T)",
+      "Aceita qualquer placar (não só empate)",
+      "Foco em jogos que já mostraram ser ofensivos (média alta de gols)",
+      "Considera defesas do goleiro (mínimo 2) para confirmar pressão real"
+    ],
+    "cuidados": [
+      "Evitar jogos muito desequilibrados (goleadas em andamento)",
+      "Cuidado com jogos após 75min - podem entrar em gestão/cansaço",
+      "Preferir jogos onde resultado ainda está em aberto",
+      "Time perdendo por 1 gol tende a atacar muito no 2T (bom cenário)"
+    ],
+    "quando_entrar": "O bot deve alertar quando TODAS as condições ao vivo E pelo menos 70% das condições pré-jogo forem atendidas",
+    "gestao_banca": "Recomendado usar 1-2% da banca por entrada, nunca mais que 5%"
+  },
+  
+  "configuracao_opcional": {
+    "filtros_placar_avancados": {
+      "cenarios_ideais": [
+        "Empate 0x0 ou 1x1 - times buscando vitória",
+        "Favorito perdendo por 1 gol - pressão máxima",
+        "Placar aberto (2x1, 2x2) - jogo dinâmico continua",
+        "Evitar: Goleadas (3+ gols de diferença)"
+      ]
+    },
+    "filtros_liga": {
+      "ligas_recomendadas": [
+        "Campeonatos ofensivos (Brasileirão, Eredivisie, Bundesliga)",
+        "Ligas com segundo tempo historicamente movimentado",
+        "Evitar ligas muito defensivas ou com baixa qualidade"
+      ]
+    },
+    "contexto_jogo": "Jogos decisivos ou times precisando de pontos tendem a ter segundo tempo mais aberto"
+  },
+  
+  "resumo_configuracao": {
+    "mercado": "Over 0.5 Gols no Segundo Tempo",
+    "faixa_tempo": "Minuto 50 até Minuto 80",
+    "odd_minima": 1.5,
+    "placar_ideal": "Qualquer (preferir jogos equilibrados ou favorito perdendo)",
+    "condicoes_criticas_ao_vivo": [
+      "Mínimo 8 ataques perigosos somados",
+      "Mínimo 3 chutes no gol somados",
+      "Mínimo 3 chutes dentro da área de qualquer time",
+      "Mínimo 6 chutes totais somados",
+      "Barra de pressão 65%+ de qualquer time",
+      "Pelo menos 2 defesas do goleiro de qualquer time",
+      "Mínimo 3 escanteios somados"
+    ],
+    "condicoes_criticas_pre_jogo": [
+      "Média de 2.5+ gols totais (histórico)",
+      "Prognóstico Over 1.5 >= 60%",
+      "Média de 15+ ataques perigosos totais",
+      "Média de 8+ chutes ao gol totais"
+    ]
+  }
+}

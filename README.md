@@ -6,10 +6,11 @@ Este repositório contém configurações otimizadas de bots para a plataforma S
 
 ### 📁 Arquivos Disponíveis
 
-1. **bot-gol-primeiro-tempo.json** - Configuração completa do bot em formato JSON
-2. **GUIA-BOT-GOL-PRIMEIRO-TEMPO.md** - Guia detalhado com explicações
-3. **CONFIG-RAPIDA.md** - Referência rápida para configuração
-4. **sokkerprobots.pdf** - Documentação oficial dos parâmetros SokkerPRO
+1. **RESPOSTA-CONFIGURACAO.md** - 🇧🇷 **COMECE AQUI!** Resposta completa em português sobre a melhor configuração
+2. **CONFIG-RAPIDA.md** - Referência rápida para copiar e colar no SokkerPRO
+3. **GUIA-BOT-GOL-PRIMEIRO-TEMPO.md** - Guia detalhado com explicações e estratégias
+4. **bot-gol-primeiro-tempo.json** - Configuração completa do bot em formato JSON
+5. **sokkerprobots.pdf** - Documentação oficial dos parâmetros SokkerPRO
 
 ### ⚽ Bot: Gol no Primeiro Tempo (10-35min)
 
@@ -20,7 +21,8 @@ Este repositório contém configurações otimizadas de bots para a plataforma S
 
 #### 🚀 Início Rápido
 
-Consulte o arquivo [CONFIG-RAPIDA.md](CONFIG-RAPIDA.md) para copiar diretamente as configurações no SokkerPRO.
+1. **Para resposta direta à sua pergunta:** Leia [RESPOSTA-CONFIGURACAO.md](RESPOSTA-CONFIGURACAO.md) (em português)
+2. **Para configurar rapidamente:** Use [CONFIG-RAPIDA.md](CONFIG-RAPIDA.md) para copiar os valores no SokkerPRO
 
 #### 📖 Guia Completo
 

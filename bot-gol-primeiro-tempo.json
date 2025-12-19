@@ -16,125 +16,61 @@
   },
   
   "condicoes_ao_vivo": {
+    "nota": "VERSÃO SIMPLIFICADA - Apenas 3 condições principais para mais alertas",
+    
     "ataques": {
       "ataques_perigosos_totais": {
         "aplicado_a": "Ambos Somados",
-        "minimo": 6,
-        "justificativa": "Mínimo de 6 ataques perigosos somados indica que ambos os times estão criando chances reais de gol"
-      },
-      "ataques_perigosos_3min": {
-        "aplicado_a": "Qualquer Time",
-        "minimo": 1.5,
-        "justificativa": "Time com média de 1.5+ ataques perigosos nos últimos 3 minutos mostra momentum ofensivo crescente"
-      },
-      "ataques_perigosos_5min": {
-        "aplicado_a": "Qualquer Time",
-        "minimo": 1.0,
-        "justificativa": "Consistência ofensiva nos últimos 5 minutos"
+        "minimo": 4,
+        "justificativa": "Reduzido de 6 para 4 - mínimo de ataques perigosos para indicar jogo movimentado"
       }
     },
     
     "chutes": {
       "chutes_no_gol": {
         "aplicado_a": "Ambos Somados",
-        "minimo": 2,
-        "justificativa": "Pelo menos 2 chutes no gol (somados) indicam finalização efetiva e pressão real sobre os goleiros"
-      },
-      "chutes_dentro_area": {
-        "aplicado_a": "Qualquer Time",
-        "minimo": 2,
-        "justificativa": "Chutes dentro da área têm maior probabilidade de conversão em gol"
-      },
-      "total_chutes": {
-        "aplicado_a": "Ambos Somados",
-        "minimo": 4,
-        "justificativa": "Volume mínimo de finalizações para indicar jogo movimentado ofensivamente"
-      }
-    },
-    
-    "escanteios": {
-      "escanteios": {
-        "aplicado_a": "Ambos Somados",
-        "minimo": 2,
-        "justificativa": "Escanteios indicam pressão ofensiva e cada um aumenta cerca de 2% a chance de gol"
+        "minimo": 1,
+        "justificativa": "Reduzido de 2 para 1 - pelo menos um chute no gol indica finalização"
       }
     },
     
     "posse_passes": {
       "barra_pressao": {
         "aplicado_a": "Qualquer Time",
-        "minimo": 60,
-        "justificativa": "Barra de pressão acima de 60% indica dominância clara de um time, aumentando chance de gol"
-      }
-    },
-    
-    "defesa": {
-      "defesas_goleiro": {
-        "aplicado_a": "Qualquer Time",
-        "minimo": 1,
-        "justificativa": "Pelo menos uma defesa do goleiro mostra que houve finalização perigosa real"
+        "minimo": 55,
+        "justificativa": "Reduzido de 60% para 55% - pressão ofensiva de algum time"
       }
     }
   },
   
   "condicoes_pre_jogo": {
-    "medias_h2h_gols": {
-      "media_gols_1t": {
-        "aplicado_a": "Ambos Somados",
-        "minimo": 1.0,
-        "justificativa": "Média de pelo menos 1 gol no primeiro tempo nos últimos 5 jogos indica tendência ofensiva"
-      }
-    },
-    
-    "medias_h2h_chutes": {
-      "media_chutes_ao_gol_1t": {
-        "aplicado_a": "Ambos Somados",
-        "minimo": 4,
-        "justificativa": "Times com boa média de chutes ao gol no 1T tendem a criar mais oportunidades"
-      },
-      "media_chutes_dentro_area_1t": {
-        "aplicado_a": "Qualquer Time",
-        "minimo": 2,
-        "justificativa": "Finalizações dentro da área são mais efetivas"
-      }
-    },
-    
-    "medias_h2h_ataques": {
-      "media_ataques_perigosos_1t": {
-        "aplicado_a": "Ambos Somados",
-        "minimo": 8,
-        "justificativa": "Mínimo de 8 ataques perigosos somados no 1T historicamente mostra jogos dinâmicos"
-      }
-    },
+    "nota": "VERSÃO SIMPLIFICADA - Apenas prognóstico obrigatório, resto opcional",
     
     "prognosticos": {
       "prognostico_over_05_1t": {
-        "minimo": 55,
-        "justificativa": "Probabilidade mínima de 55% para sair gol no primeiro tempo segundo algoritmo SokkerPRO"
-      },
-      "prognostico_ambas_marcam_opcional": {
-        "minimo": 45,
-        "justificativa": "Se ambas marcam tiver 45%+, aumenta ainda mais a chance de gol no 1T (opcional)"
+        "minimo": 50,
+        "justificativa": "Reduzido de 55% para 50% - probabilidade razoável de gol no primeiro tempo"
       }
     }
   },
   
   "estrategia_recomendada": {
-    "tipo": "Entrada Conservadora com Alta Probabilidade",
+    "tipo": "Entrada Balanceada com Mais Oportunidades",
     "pontos_fortes": [
-      "Faixa de tempo otimizada (10-35min) evita primeiros minutos de estudo e garante tempo suficiente para o gol",
+      "SIMPLIFICADA: Apenas 4 condições principais (3 ao vivo + 1 pré-jogo)",
+      "Faixa de tempo otimizada (10-35min) evita primeiros minutos de estudo",
       "Odd mínima de 1.5 garante boa relação risco/retorno",
-      "Múltiplos filtros ao vivo garantem que entrada só acontece em jogos realmente ofensivos",
-      "Histórico recente dos times (H2H) confirma tendência ofensiva",
-      "Prognóstico SokkerPRO valida a probabilidade estatística"
+      "Valores reduzidos permitem mais alertas sem perder qualidade",
+      "Foco nas estatísticas mais importantes: ataques perigosos, chutes e pressão"
     ],
-    "cuidados": [
-      "Evitar jogos muito travados mesmo que atendam alguns critérios",
-      "Preferir jogos equilibrados (empate) para maximizar probabilidade",
-      "Atenção ao histórico de gols no 1T dos times específicos",
-      "Considerar momento da temporada e importância do jogo"
+    "mudancas_simplificacao": [
+      "Ataques perigosos: 6 → 4 (mais flexível)",
+      "Chutes no gol: 2 → 1 (aceita jogos com menos finalizações)",
+      "Barra de pressão: 60% → 55% (threshold mais baixo)",
+      "Prognóstico: 55% → 50% (aceita mais jogos)",
+      "REMOVIDAS: Condições de média histórica, escanteios, defesas, ataques por minuto"
     ],
-    "quando_entrar": "O bot deve alertar quando TODAS as condições ao vivo E pelo menos 70% das condições pré-jogo forem atendidas",
+    "quando_entrar": "O bot alertará quando TODAS as 4 condições forem atendidas (muito mais entradas que antes)",
     "gestao_banca": "Recomendado usar 1-2% da banca por entrada, nunca mais que 5%"
   },
   
@@ -154,17 +90,23 @@
     "faixa_tempo": "Minuto 10 até Minuto 35",
     "odd_minima": 1.5,
     "placar_ideal": "0x0 (Empate)",
-    "condicoes_criticas_ao_vivo": [
-      "Mínimo 6 ataques perigosos somados",
-      "Mínimo 2 chutes no gol somados",
-      "Mínimo 2 chutes dentro da área de qualquer time",
-      "Barra de pressão 60%+ de qualquer time",
-      "Pelo menos 1 defesa do goleiro de qualquer time"
+    "versao": "SIMPLIFICADA - Mais entradas",
+    "total_condicoes": "4 condições (3 ao vivo + 1 pré-jogo)",
+    "condicoes_ao_vivo": [
+      "Mínimo 4 ataques perigosos somados (era 6)",
+      "Mínimo 1 chute no gol somado (era 2)",
+      "Barra de pressão 55%+ de qualquer time (era 60%)"
     ],
-    "condicoes_criticas_pre_jogo": [
-      "Média de 1+ gol no 1T (histórico)",
-      "Prognóstico Over 0.5 1T >= 55%",
-      "Média de 8+ ataques perigosos no 1T"
+    "condicoes_pre_jogo": [
+      "Prognóstico Over 0.5 1T >= 50% (era 55%)"
+    ],
+    "condicoes_removidas": [
+      "Ataques perigosos 3min e 5min",
+      "Chutes dentro da área",
+      "Total de chutes",
+      "Escanteios",
+      "Defesas do goleiro",
+      "Médias históricas H2H"
     ]
   }
 }

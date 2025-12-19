@@ -18,97 +18,47 @@ Filtro de Placar: Empate
 
 ## 🎯 PASSO 3: Condições
 
-### CONDIÇÕES AO VIVO
+### ⚡ VERSÃO SIMPLIFICADA - Apenas 4 Condições!
+
+Esta configuração foi **SIMPLIFICADA** para gerar **MAIS ALERTAS**.
+Removemos várias condições secundárias e reduzimos os valores mínimos.
+
+### CONDIÇÕES AO VIVO (3 condições)
 
 #### ⚔️ Ataques
 ```
 Ataques Perigosos Totais
 ├─ Aplicado a: Ambos Somados
-└─ Mínimo: 6
-
-Ataques Perigosos 3 minutos
-├─ Aplicado a: Qualquer Time
-└─ Mínimo: 1.5
-
-Ataques Perigosos 5 minutos
-├─ Aplicado a: Qualquer Time
-└─ Mínimo: 1.0
+└─ Mínimo: 4  (era 6 na versão anterior)
 ```
 
 #### 🎯 Chutes
 ```
 Chutes no Gol
 ├─ Aplicado a: Ambos Somados
-└─ Mínimo: 2
-
-Chutes Dentro da Área
-├─ Aplicado a: Qualquer Time
-└─ Mínimo: 2
-
-Total de Chutes
-├─ Aplicado a: Ambos Somados
-└─ Mínimo: 4
+└─ Mínimo: 1  (era 2 na versão anterior)
 ```
 
-#### 📐 Escanteios
-```
-Escanteios
-├─ Aplicado a: Ambos Somados
-└─ Mínimo: 2
-```
-
-#### 📊 Outros
+#### 📊 Pressão
 ```
 Barra de Pressão
 ├─ Aplicado a: Qualquer Time
-└─ Mínimo: 60%
-
-Defesas do Goleiro
-├─ Aplicado a: Qualquer Time
-└─ Mínimo: 1
+└─ Mínimo: 55%  (era 60% na versão anterior)
 ```
 
 ---
 
-### CONDIÇÕES PRÉ-JOGO
-
-#### ⚽ Médias H2H - Gols
-```
-Média de Gols (1T)
-├─ Aplicado a: Ambos Somados
-└─ Mínimo: 1.0
-```
-
-#### 🎯 Médias H2H - Chutes
-```
-Média de Chutes ao Gol (1T)
-├─ Aplicado a: Ambos Somados
-└─ Mínimo: 4
-
-Média de Chutes Dentro da Área (1T)
-├─ Aplicado a: Qualquer Time
-└─ Mínimo: 2
-```
-
-#### ⚔️ Médias H2H - Ataques
-```
-Média de Ataques Perigosos (1T)
-├─ Aplicado a: Ambos Somados
-└─ Mínimo: 8
-```
+### CONDIÇÕES PRÉ-JOGO (1 condição)
 
 #### 🔮 Prognósticos
 ```
 Prognóstico Over 0.5 (1T)
-└─ Mínimo: 55
-
-Prognóstico Ambas Marcam (Sim) [OPCIONAL]
-└─ Mínimo: 45
+└─ Mínimo: 50  (era 55 na versão anterior)
 ```
 
 ---
 
-## 📋 CHECKLIST DE ENTRADA
+## 📋 CHECKLIST DE ENTRADA (SIMPLIFICADO)
 
 Antes de entrar, verifique:
 
@@ -117,19 +67,29 @@ Antes de entrar, verifique:
 - [ ] Odd ≥ 1.5
 - [ ] Jogo empatado (0x0)
 
-### ✅ Ao Vivo (TODAS)
-- [ ] 6+ ataques perigosos somados
-- [ ] 2+ chutes no gol somados
-- [ ] 2+ chutes dentro área (qualquer)
-- [ ] 60%+ barra pressão (qualquer)
-- [ ] 1+ defesa goleiro (qualquer)
+### ✅ Condições (TODAS - apenas 4!)
+- [ ] 4+ ataques perigosos somados
+- [ ] 1+ chute no gol somado
+- [ ] 55%+ barra pressão (qualquer time)
+- [ ] 50%+ prognóstico Over 0.5 1T
 
-### ✅ Pré-Jogo (70% ou mais)
-- [ ] 1.0+ média gols 1T
-- [ ] 4+ média chutes ao gol 1T
-- [ ] 2+ média chutes área 1T
-- [ ] 8+ média ataques perigosos 1T
-- [ ] 55%+ prognóstico Over 0.5 1T
+---
+
+## 🔄 O QUE MUDOU?
+
+### ❌ REMOVIDO (para mais alertas):
+- Ataques perigosos 3min e 5min
+- Chutes dentro da área
+- Total de chutes
+- Escanteios
+- Defesas do goleiro
+- Todas as médias históricas H2H
+
+### ✅ MANTIDO (essencial):
+- Ataques perigosos totais (reduzido 6→4)
+- Chutes no gol (reduzido 2→1)
+- Barra de pressão (reduzido 60%→55%)
+- Prognóstico Over 0.5 1T (reduzido 55%→50%)
 
 ---
 
@@ -161,8 +121,11 @@ Agressivo:   3% da banca (máximo 5%)
 
 ## 💡 DICA FINAL
 
-**Este bot busca QUALIDADE sobre QUANTIDADE**
+**Versão SIMPLIFICADA = MAIS ENTRADAS!**
 
-Não entre em todos os jogos que aparecerem. Espere pelas melhores oportunidades onde TODOS os indicadores estejam alinhados. É melhor ter 3-4 entradas excelentes por dia do que 10 entradas medianas.
+Agora o bot terá muito mais alertas porque:
+- ✅ Apenas 4 condições (vs 10+ antes)
+- ✅ Valores mínimos reduzidos
+- ✅ Sem médias históricas obrigatórias
 
-**Paciência + Disciplina = Lucro** 🎯✨
+**Resultado:** Mais oportunidades por dia, mantendo qualidade razoável! 🎯✨

@@ -24,46 +24,51 @@ Selecione: **"Over 0.5 (1T)"** ou **"Sair gol no primeiro tempo"**
 | **Valor de entrada** | 0 ou [seu valor] | 0 = só alertas; coloque valor para calcular lucro |
 | **Filtro de placar** | Empate | Jogos 0x0 têm maior chance de abrir e sair gol |
 
-### **PASSO 3: Condições** ⭐ **IMPORTANTE**
+### **PASSO 3: Condições** ⭐ **VERSÃO SIMPLIFICADA**
 
-#### 🔴 CONDIÇÕES AO VIVO (obrigatórias)
+#### 🔴 CONDIÇÕES AO VIVO (apenas 3 - obrigatórias)
 
 **ATAQUES:**
-- ✅ Ataques Perigosos Totais → Ambos Somados → Mínimo **6**
-- ✅ Ataques Perigosos 3min → Qualquer Time → Mínimo **1.5**
-- ✅ Ataques Perigosos 5min → Qualquer Time → Mínimo **1.0**
+- ✅ Ataques Perigosos Totais → Ambos Somados → Mínimo **4** (era 6)
 
 **CHUTES:**
-- ✅ Chutes no Gol → Ambos Somados → Mínimo **2**
-- ✅ Chutes Dentro da Área → Qualquer Time → Mínimo **2**
-- ✅ Total de Chutes → Ambos Somados → Mínimo **4**
+- ✅ Chutes no Gol → Ambos Somados → Mínimo **1** (era 2)
 
-**ESCANTEIOS:**
-- ✅ Escanteios → Ambos Somados → Mínimo **2**
+**PRESSÃO:**
+- ✅ Barra de Pressão → Qualquer Time → Mínimo **55%** (era 60%)
 
-**OUTROS:**
-- ✅ Barra de Pressão → Qualquer Time → Mínimo **60%**
-- ✅ Defesas do Goleiro → Qualquer Time → Mínimo **1**
-
-#### 🔵 CONDIÇÕES PRÉ-JOGO (recomendadas)
-
-**MÉDIAS H2H - GOLS:**
-- ✅ Média de Gols (1T) → Ambos Somados → Mínimo **1.0**
-
-**MÉDIAS H2H - CHUTES:**
-- ✅ Média de Chutes ao Gol (1T) → Ambos Somados → Mínimo **4**
-- ✅ Média de Chutes Dentro da Área (1T) → Qualquer Time → Mínimo **2**
-
-**MÉDIAS H2H - ATAQUES:**
-- ✅ Média de Ataques Perigosos (1T) → Ambos Somados → Mínimo **8**
+#### 🔵 CONDIÇÕES PRÉ-JOGO (apenas 1 - recomendada)
 
 **PROGNÓSTICOS:**
-- ✅ Prognóstico Over 0.5 (1T) → Mínimo **55**
-- ⚪ Prognóstico Ambas Marcam (Sim) → Mínimo **45** (opcional)
+- ✅ Prognóstico Over 0.5 (1T) → Mínimo **50** (era 55)
 
 ---
 
-## 🎯 POR QUE ESSA CONFIGURAÇÃO É A MELHOR?
+## ⚡ IMPORTANTE: CONFIGURAÇÃO SIMPLIFICADA!
+
+Esta é a **VERSÃO SIMPLIFICADA** do bot com **MUITO MAIS ALERTAS**.
+
+### ❌ O QUE FOI REMOVIDO:
+- Ataques perigosos 3min e 5min
+- Chutes dentro da área
+- Total de chutes
+- Escanteios
+- Defesas do goleiro
+- Todas as médias históricas H2H
+
+### ✅ O QUE FOI MANTIDO (com valores reduzidos):
+- Ataques perigosos totais: 6 → **4**
+- Chutes no gol: 2 → **1**
+- Barra pressão: 60% → **55%**
+- Prognóstico: 55% → **50%**
+
+### 🎯 RESULTADO:
+**Antes:** ~10+ condições = Poucos alertas
+**Agora:** Apenas 4 condições = **MUITO mais alertas!**
+
+---
+
+## 🎯 POR QUE ESSA CONFIGURAÇÃO SIMPLIFICADA?
 
 ### 1. **Tempo otimizado (10-35min)**
 - ❌ 0-10min: Times ainda se conhecendo, pouca movimentação
@@ -75,16 +80,19 @@ Selecione: **"Over 0.5 (1T)"** ou **"Sair gol no primeiro tempo"**
 - Retorno decente sem risco excessivo
 - Permite lucro consistente ao longo do tempo
 
-### 3. **Múltiplos filtros**
-Você só entra quando o jogo está:
-- ⚽ Ofensivo (muitos ataques perigosos)
-- 🎯 Com finalizações (chutes no gol)
-- 📊 Com pressão real (barra de pressão, defesas)
-- 📈 Histórico positivo (médias H2H boas)
-- 🔮 Probabilidade validada (prognóstico SokkerPRO)
+### 3. **Apenas 4 condições essenciais**
+A versão anterior tinha muitas condições e gerava poucos alertas.
+**Agora você só precisa de:**
+- ⚽ 4+ ataques perigosos (jogo movimentado)
+- 🎯 1+ chute no gol (pelo menos uma finalização)
+- 📊 55%+ pressão (algum time dominando)
+- 🔮 50%+ prognóstico (chance razoável)
 
 ### 4. **Placar Empate**
 Jogos empatados tendem a "abrir" mais que jogos com vencedor, aumentando chances de gol.
+
+### 5. **Mais oportunidades**
+Com apenas 4 condições (vs 10+ antes), você terá **MUITO mais alertas por dia**!
 
 ---
 

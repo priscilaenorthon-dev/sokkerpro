@@ -16,6 +16,7 @@ Identificar jogos ao vivo onde há alta probabilidade de sair um gol no primeiro
 - **Faixa de Minutos:** 10 até 35
   - Por quê? Após o aquecimento inicial (0-10min) e com tempo suficiente antes do intervalo
 - **Odd Mínima:** 1.5
+- **Valor de Entrada:** 0 (apenas alertas) ou defina um valor para contabilizar lucro/prejuízo
 - **Filtro de Placar:** Empate (0x0)
   - Jogos empatados tendem a abrir mais no primeiro tempo
 

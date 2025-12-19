@@ -9,7 +9,7 @@ Faixa de Minutos
 
 Odd Mínima de Entrada: 1.5
 
-Valor de Entrada: [seu valor] ou deixe vazio para apenas alertas
+Valor de Entrada: 0 (para apenas alertas) ou [seu valor] para contabilizar lucro/prejuízo
 
 Filtro de Placar: Empate
 ```

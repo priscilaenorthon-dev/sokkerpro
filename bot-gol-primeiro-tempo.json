@@ -9,7 +9,8 @@
       "justificativa": "Período ideal após aquecimento inicial e antes do intervalo, quando os times já estão no ritmo mas ainda têm energia"
     },
     "odd_minima_entrada": 1.5,
-    "valor_entrada": null,
+    "valor_entrada": 0,
+    "valor_entrada_nota": "0 = apenas alertas sem contabilizar lucro/prejuízo. Defina um valor para ativar contabilização (ex: 10, 20, etc)",
     "filtro_placar": "Empate",
     "mercado_alvo": "Over 0.5 (1T) - Sair gol no primeiro tempo"
   },

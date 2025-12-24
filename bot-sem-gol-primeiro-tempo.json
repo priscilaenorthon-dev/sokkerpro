@@ -1,0 +1,146 @@
+{
+  "nome_bot": "SEM Gol no Primeiro Tempo (10-35min)",
+  "descricao": "Bot otimizado para detectar jogos onde NÃO sairá gol no primeiro tempo, entre os minutos 10 e 35, com odd mínima de 1.5",
+  
+  "configuracao_essencial": {
+    "faixa_minutos": {
+      "de": 10,
+      "ate": 35,
+      "justificativa": "Período para confirmar que o jogo está travado/defensivo e provavelmente não terá gol no 1T"
+    },
+    "odd_minima_entrada": 1.5,
+    "valor_entrada": 0,
+    "valor_entrada_nota": "0 = apenas alertas sem contabilizar lucro/prejuízo. Defina um valor para ativar contabilização (ex: 10, 20, etc)",
+    "filtro_placar": "Empate",
+    "mercado_alvo": "Under 0.5 (1T) - NÃO sair gol no primeiro tempo"
+  },
+  
+  "condicoes_ao_vivo": {
+    "nota": "CONDIÇÕES INVERSAS - Queremos jogo TRAVADO, não ofensivo",
+    
+    "ataques": {
+      "ataques_perigosos_totais": {
+        "aplicado_a": "Ambos Somados",
+        "maximo": 3,
+        "justificativa": "Máximo de 3 ataques perigosos somados - jogo travado, poucas chances criadas"
+      }
+    },
+    
+    "chutes": {
+      "chutes_no_gol": {
+        "aplicado_a": "Ambos Somados",
+        "maximo": 1,
+        "justificativa": "No máximo 1 chute no gol - jogo sem finalizações perigosas"
+      },
+      "total_chutes": {
+        "aplicado_a": "Ambos Somados",
+        "maximo": 3,
+        "justificativa": "Poucos chutes totais indicam jogo travado"
+      }
+    },
+    
+    "posse_passes": {
+      "barra_pressao": {
+        "aplicado_a": "Ambos Times",
+        "maximo": 50,
+        "justificativa": "Nenhum time com pressão significativa - jogo equilibrado e fechado"
+      }
+    }
+  },
+  
+  "condicoes_pre_jogo": {
+    "nota": "Buscamos jogos historicamente fechados e defensivos",
+    
+    "medias_h2h_gols": {
+      "media_gols_1t": {
+        "aplicado_a": "Ambos Somados",
+        "maximo": 0.6,
+        "justificativa": "Média baixa de gols no 1T indica tendência de jogos fechados no primeiro tempo"
+      }
+    },
+    
+    "prognosticos": {
+      "prognostico_under_05_1t": {
+        "minimo": 55,
+        "justificativa": "Probabilidade alta (55%+) de NÃO sair gol no primeiro tempo"
+      },
+      "prognostico_ambas_marcam_nao": {
+        "minimo": 50,
+        "justificativa": "Probabilidade de pelo menos um time não marcar (opcional)"
+      }
+    }
+  },
+  
+  "estrategia_recomendada": {
+    "tipo": "Jogos Defensivos e Travados",
+    "pontos_fortes": [
+      "Foco em jogos com poucas chances criadas",
+      "Times defensivos que estudam adversário no 1T",
+      "Valores MÁXIMOS (não mínimos) - jogo precisa estar PARADO",
+      "Ideal para ligas táticas e defensivas",
+      "Bom para clássicos equilibrados onde times se respeitam"
+    ],
+    "caracteristicas_ideais": [
+      "Times muito defensivos (Ex: Atlético-MG, Getafe, Burnley)",
+      "Clássicos equilibrados onde times se estudam",
+      "Jogos com muito em jogo (decisões, mata-mata)",
+      "Ligas conhecidas por serem táticas (Serie A italiana, La Liga em alguns casos)",
+      "Jogos com chuva/frio intenso que dificultam ataque"
+    ],
+    "quando_entrar": "O bot alertará quando TODAS as condições forem atendidas - jogo travado com poucas chances",
+    "gestao_banca": "Recomendado usar 1-2% da banca por entrada, nunca mais que 5%"
+  },
+  
+  "configuracao_opcional": {
+    "filtros_placar_avancados": {
+      "ideal": "Empate 0x0",
+      "aceitavel": "Empate sem gols",
+      "evitar": "Qualquer placar com gols (jogo já tem gol, perdemos a aposta)"
+    },
+    "filtros_liga": {
+      "ligas_recomendadas": [
+        "Serie A (Itália - muito tática)",
+        "Ligue 1 (França - jogos equilibrados)",
+        "La Liga (Espanha - alguns jogos muito fechados)",
+        "Campeonatos sul-americanos (Libertadores - jogos estudados)"
+      ],
+      "ligas_evitar": [
+        "Eredivisie (Holanda - muito ofensiva)",
+        "Bundesliga (Alemanha - muitos gols)",
+        "Championship (Inglaterra 2ª - imprevisível)"
+      ]
+    },
+    "contexto_favoravel": [
+      "Jogos de mata-mata (times cautelosos)",
+      "Times brigando contra rebaixamento (medo de perder)",
+      "Clássicos muito equilibrados",
+      "Jogos com mau tempo",
+      "Times sem atacantes importantes (lesionados/suspensos)"
+    ]
+  },
+  
+  "resumo_configuracao": {
+    "mercado": "Under 0.5 Gols no Primeiro Tempo (SEM gol)",
+    "faixa_tempo": "Minuto 10 até Minuto 35",
+    "odd_minima": 1.5,
+    "placar_ideal": "0x0 (Empate sem gols)",
+    "versao": "INVERSA - Busca jogos TRAVADOS",
+    "total_condicoes": "6 condições (4 ao vivo + 2 pré-jogo)",
+    "condicoes_ao_vivo": [
+      "MÁXIMO 3 ataques perigosos somados (jogo travado)",
+      "MÁXIMO 1 chute no gol somado (sem finalizações)",
+      "MÁXIMO 3 chutes totais somados (pouca movimentação)",
+      "MÁXIMO 50% barra de pressão de ambos (jogo equilibrado)"
+    ],
+    "condicoes_pre_jogo": [
+      "MÁXIMO 0.6 média de gols no 1T (histórico defensivo)",
+      "MÍNIMO 55% prognóstico Under 0.5 1T"
+    ],
+    "diferenca_bot_over": [
+      "Usa MÁXIMO em vez de MÍNIMO",
+      "Busca jogos TRAVADOS em vez de ofensivos",
+      "Ideal para times/ligas DEFENSIVOS",
+      "Mercado Under em vez de Over"
+    ]
+  }
+}

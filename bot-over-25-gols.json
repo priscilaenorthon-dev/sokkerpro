@@ -1,0 +1,102 @@
+{
+  "nome_bot": "Over 2.5 Gols (Jogo Completo)",
+  "descricao": "Bot otimizado para detectar jogos com 3 ou mais gols no total (tempo completo), com odd mínima de 1.5",
+  
+  "configuracao_essencial": {
+    "faixa_minutos": {
+      "de": 15,
+      "ate": 75,
+      "justificativa": "Período amplo para confirmar tendência ofensiva do jogo completo"
+    },
+    "odd_minima_entrada": 1.5,
+    "valor_entrada": 0,
+    "valor_entrada_nota": "0 = apenas alertas sem contabilizar lucro/prejuízo. Defina um valor para ativar contabilização",
+    "filtro_placar": "Qualquer",
+    "mercado_alvo": "Over 2.5 Gols - 3 ou mais gols no jogo completo"
+  },
+  
+  "condicoes_ao_vivo": {
+    "nota": "Busca jogos muito ofensivos com alta probabilidade de muitos gols",
+    
+    "gols": {
+      "gols_marcados": {
+        "minimo": 1,
+        "justificativa": "Pelo menos 1 gol já marcado mostra que jogo está aberto"
+      }
+    },
+    
+    "ataques": {
+      "ataques_perigosos_totais": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 12,
+        "justificativa": "Mínimo de 12 ataques perigosos indica jogo muito ofensivo"
+      }
+    },
+    
+    "chutes": {
+      "chutes_no_gol": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 6,
+        "justificativa": "Muitas finalizações indicam jogo aberto e ofensivo"
+      }
+    },
+    
+    "posse_passes": {
+      "barra_pressao": {
+        "aplicado_a": "Qualquer Time",
+        "minimo": 60,
+        "justificativa": "Pressão ofensiva alta de pelo menos um time"
+      }
+    }
+  },
+  
+  "condicoes_pre_jogo": {
+    "nota": "Histórico de jogos com muitos gols",
+    
+    "medias_h2h_gols": {
+      "media_gols_total": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 2.8,
+        "justificativa": "Média alta de gols totais indica times ofensivos"
+      }
+    },
+    
+    "prognosticos": {
+      "prognostico_over_25": {
+        "minimo": 55,
+        "justificativa": "Probabilidade mínima de 55% para 3+ gols no jogo"
+      },
+      "prognostico_ambas_marcam": {
+        "minimo": 60,
+        "justificativa": "Alta probabilidade de ambas marcarem ajuda a atingir 3+ gols"
+      }
+    }
+  },
+  
+  "estrategia_recomendada": {
+    "tipo": "Jogos Ofensivos e Abertos",
+    "cenarios_ideais": [
+      "Jogos já com 1-2 gols (ex: 1x1, 2x0, 1x2)",
+      "Times ofensivos conhecidos (Man City, Bayern, PSG)",
+      "Ligas ofensivas (Eredivisie, Bundesliga, Brasileirão)",
+      "Jogo equilibrado onde ambos atacam",
+      "Time perdendo precisa buscar resultado"
+    ],
+    "quando_entrar": "Jogo já tem gol(s) E muitas chances criadas E histórico ofensivo",
+    "gestao_banca": "1-2% da banca por entrada"
+  },
+  
+  "resumo_configuracao": {
+    "mercado": "Over 2.5 Gols (Jogo Completo)",
+    "faixa_tempo": "Minuto 15 até 75",
+    "odd_minima": 1.5,
+    "condicoes_principais": [
+      "Pelo menos 1 gol já marcado",
+      "12+ ataques perigosos somados",
+      "6+ chutes no gol somados",
+      "60%+ barra pressão",
+      "2.8+ média gols histórico",
+      "55%+ prognóstico Over 2.5"
+    ]
+  }
+}

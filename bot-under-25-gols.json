@@ -1,0 +1,84 @@
+{
+  "nome_bot": "Under 2.5 Gols (Jogo Completo)",
+  "descricao": "Bot otimizado para detectar jogos com 2 ou menos gols no total (tempo completo), com odd mínima de 1.5",
+  
+  "configuracao_essencial": {
+    "faixa_minutos": {
+      "de": 15,
+      "ate": 75,
+      "justificativa": "Período para confirmar que jogo está travado/defensivo"
+    },
+    "odd_minima_entrada": 1.5,
+    "valor_entrada": 0,
+    "valor_entrada_nota": "0 = apenas alertas sem contabilizar lucro/prejuízo",
+    "filtro_placar": "Qualquer",
+    "mercado_alvo": "Under 2.5 Gols - Máximo 2 gols no jogo completo"
+  },
+  
+  "condicoes_ao_vivo": {
+    "nota": "Busca jogos travados com poucas chances de gol",
+    
+    "gols": {
+      "gols_marcados": {
+        "maximo": 1,
+        "justificativa": "Máximo 1 gol para ainda ter margem de segurança"
+      }
+    },
+    
+    "ataques": {
+      "ataques_perigosos_totais": {
+        "aplicado_a": "Ambos Somados",
+        "maximo": 8,
+        "justificativa": "Poucos ataques perigosos indicam jogo travado"
+      }
+    },
+    
+    "chutes": {
+      "chutes_no_gol": {
+        "aplicado_a": "Ambos Somados",
+        "maximo": 4,
+        "justificativa": "Poucas finalizações = baixa probabilidade de muitos gols"
+      }
+    }
+  },
+  
+  "condicoes_pre_jogo": {
+    "medias_h2h_gols": {
+      "media_gols_total": {
+        "aplicado_a": "Ambos Somados",
+        "maximo": 2.2,
+        "justificativa": "Histórico de jogos com poucos gols"
+      }
+    },
+    
+    "prognosticos": {
+      "prognostico_under_25": {
+        "minimo": 55,
+        "justificativa": "Probabilidade alta de no máximo 2 gols"
+      }
+    }
+  },
+  
+  "estrategia_recomendada": {
+    "tipo": "Jogos Defensivos e Táticos",
+    "cenarios_ideais": [
+      "Times defensivos (Getafe, Atlético-MG)",
+      "Ligas táticas (Serie A, La Liga)",
+      "Jogo 0x0 ou 1x0 após 30+ minutos",
+      "Poucas chances criadas",
+      "Ambos times satisfeitos com empate"
+    ],
+    "gestao_banca": "1-2% da banca"
+  },
+  
+  "resumo_configuracao": {
+    "mercado": "Under 2.5 Gols",
+    "condicoes_principais": [
+      "Máx 1 gol marcado",
+      "Máx 8 ataques perigosos",
+      "Máx 4 chutes no gol",
+      "Máx 2.2 média gols",
+      "55%+ prognóstico Under 2.5"
+    ]
+  }
+}

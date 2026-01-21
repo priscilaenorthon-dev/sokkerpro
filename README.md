@@ -6,7 +6,20 @@ Este repositório contém configurações otimizadas de bots para a plataforma S
 
 ---
 
-## 🎯 NOVO! 14 Bots Especializados
+## ⚡ COMECE AQUI → [CONFIGURAÇÃO PASSO A PASSO](CONFIGURACAO-PASSO-A-PASSO.md)
+
+**📋 Guia completo com instruções detalhadas para configurar cada um dos 14 bots na plataforma SokkerPRO.**
+
+Este guia contém **configuração passo a passo de todos os 14 bots**, incluindo:
+- ✅ Todas as condições AO VIVO para cada bot
+- ✅ Todas as condições PRÉ-JOGO para cada bot  
+- ✅ Cenários ideais e o que evitar
+- ✅ Gestão de banca para cada estratégia
+- ✅ Checklist antes de entrar em cada aposta
+
+---
+
+## 🎯 14 Bots Especializados
 
 ### 📊 Coleção Completa de Bots para 6 Mercados
 
@@ -14,14 +27,15 @@ Criamos **14 bots especializados** cobrindo os principais mercados do SokkerPRO 
 
 ### 📁 Arquivos Principais
 
-1. **GUIA-14-BOTS-ESPECIALIZADOS.md** - 🇧🇷 **COMECE AQUI!** Guia completo dos 14 bots
-2. **REFERENCIA-RAPIDA-14-BOTS.md** - Tabela resumida e escolha rápida por situação
-3. **bot-01 a bot-14** - 14 arquivos JSON com configurações detalhadas
+1. **[CONFIGURACAO-PASSO-A-PASSO.md](CONFIGURACAO-PASSO-A-PASSO.md)** - ⭐ **COMECE AQUI!** Configuração detalhada bot por bot
+2. **[GUIA-14-BOTS-ESPECIALIZADOS.md](GUIA-14-BOTS-ESPECIALIZADOS.md)** - Guia completo dos 14 bots com explicações
+3. **[REFERENCIA-RAPIDA-14-BOTS.md](REFERENCIA-RAPIDA-14-BOTS.md)** - Tabela resumida e escolha rápida por situação
 
 ### 🚀 Início Rápido - 14 Bots
 
-1. **Para guia completo:** Leia [GUIA-14-BOTS-ESPECIALIZADOS.md](GUIA-14-BOTS-ESPECIALIZADOS.md)
-2. **Para referência rápida:** Use [REFERENCIA-RAPIDA-14-BOTS.md](REFERENCIA-RAPIDA-14-BOTS.md)
+1. **Para configurar passo a passo:** Leia [CONFIGURACAO-PASSO-A-PASSO.md](CONFIGURACAO-PASSO-A-PASSO.md) ⭐
+2. **Para guia completo:** Leia [GUIA-14-BOTS-ESPECIALIZADOS.md](GUIA-14-BOTS-ESPECIALIZADOS.md)
+3. **Para referência rápida:** Use [REFERENCIA-RAPIDA-14-BOTS.md](REFERENCIA-RAPIDA-14-BOTS.md)
 
 ### 📊 Distribuição por Mercado
 
@@ -36,137 +50,71 @@ Criamos **14 bots especializados** cobrindo os principais mercados do SokkerPRO 
 
 ---
 
-## ⚽ Bot 1: Gol no Primeiro Tempo (10-35min)
+## 📚 Documentação de Bots Originais
+
+### ⚽ Bot 1: Gol no Primeiro Tempo (10-35min)
 
 **Mercado:** Over 0.5 Gols (1T)  
 **Odd Mínima:** 1.5  
 **Faixa:** Minuto 10 até 35  
 **Placar:** Empate (0x0)
 
-### 📁 Arquivos do Bot 1T (COM Gol)
+#### 📁 Arquivos do Bot 1T (COM Gol)
 
-1. **RESPOSTA-CONFIGURACAO.md** - 🇧🇷 **COMECE AQUI!** Resposta completa em português
+1. **RESPOSTA-CONFIGURACAO.md** - 🇧🇷 Resposta completa em português
 2. **CONFIG-RAPIDA.md** - Referência rápida para copiar e colar no SokkerPRO
 3. **GUIA-BOT-GOL-PRIMEIRO-TEMPO.md** - Guia detalhado com explicações e estratégias
-4. **bot-gol-primeiro-tempo.json** - Configuração completa do bot em formato JSON
-
-### 🚀 Início Rápido - Bot 1T (COM Gol)
-
-1. **Para resposta direta:** Leia [RESPOSTA-CONFIGURACAO.md](RESPOSTA-CONFIGURACAO.md)
-2. **Para configurar:** Use [CONFIG-RAPIDA.md](CONFIG-RAPIDA.md)
-3. **Para detalhes:** Veja [GUIA-BOT-GOL-PRIMEIRO-TEMPO.md](GUIA-BOT-GOL-PRIMEIRO-TEMPO.md)
 
 ---
 
-## 🚫 Bot 2: SEM Gol no Primeiro Tempo (10-35min)
+### 🚫 Bot 2: SEM Gol no Primeiro Tempo (10-35min)
 
 **Mercado:** Under 0.5 Gols (1T)  
 **Odd Mínima:** 1.5  
 **Faixa:** Minuto 10 até 35  
 **Placar:** Empate (0x0) - OBRIGATÓRIO!
 
-### 📁 Arquivos do Bot 1T (SEM Gol)
+#### 📁 Arquivos do Bot 1T (SEM Gol)
 
-1. **RESPOSTA-SEM-GOL.md** - 🇧🇷 **COMECE AQUI!** Resposta completa em português
+1. **RESPOSTA-SEM-GOL.md** - 🇧🇷 Resposta completa em português
 2. **CONFIG-RAPIDA-SEM-GOL.md** - Referência rápida para copiar e colar no SokkerPRO
 3. **GUIA-BOT-SEM-GOL-PRIMEIRO-TEMPO.md** - Guia detalhado com explicações e estratégias
-4. **bot-sem-gol-primeiro-tempo.json** - Configuração completa do bot em formato JSON
-
-### 🚀 Início Rápido - Bot 1T (SEM Gol)
-
-1. **Para resposta direta:** Leia [RESPOSTA-SEM-GOL.md](RESPOSTA-SEM-GOL.md)
-2. **Para configurar:** Use [CONFIG-RAPIDA-SEM-GOL.md](CONFIG-RAPIDA-SEM-GOL.md)
-3. **Para detalhes:** Veja [GUIA-BOT-SEM-GOL-PRIMEIRO-TEMPO.md](GUIA-BOT-SEM-GOL-PRIMEIRO-TEMPO.md)
 
 ---
 
-## ⚽ Bot 3: Gol no Segundo Tempo (50-80min)
+### ⚽ Bot 3: Gol no Segundo Tempo (50-80min)
 
 **Mercado:** Over 0.5 Gols (2T)  
 **Odd Mínima:** 1.5  
 **Faixa:** Minuto 50 até 80  
 **Placar:** Qualquer (favorito perdendo = ideal!)
 
-### 📁 Arquivos do Bot 2T
+#### 📁 Arquivos do Bot 2T
 
-1. **RESPOSTA-2T.md** - 🇧🇷 **COMECE AQUI!** Resposta completa em português
+1. **RESPOSTA-2T.md** - 🇧🇷 Resposta completa em português
 2. **CONFIG-RAPIDA-2T.md** - Referência rápida para copiar e colar no SokkerPRO
 3. **GUIA-BOT-GOL-SEGUNDO-TEMPO.md** - Guia detalhado com explicações e estratégias
-4. **bot-gol-segundo-tempo.json** - Configuração completa do bot em formato JSON
-
-### 🚀 Início Rápido - Bot 2T
-
-1. **Para resposta direta:** Leia [RESPOSTA-2T.md](RESPOSTA-2T.md)
-2. **Para configurar:** Use [CONFIG-RAPIDA-2T.md](CONFIG-RAPIDA-2T.md)
-3. **Para detalhes:** Veja [GUIA-BOT-GOL-SEGUNDO-TEMPO.md](GUIA-BOT-GOL-SEGUNDO-TEMPO.md)
 
 ---
 
-## 🎯 4 Bots Essenciais Adicionais
+### 🎯 4 Bots Essenciais Adicionais
 
-### Bot 4: Over 2.5 Gols (Jogo Completo)
+#### Bot 4: Over 2.5 Gols (Jogo Completo)
 **Mercado:** Over 2.5 Gols | **Faixa:** 15-75min | **Para:** Jogos ofensivos
 
-### Bot 5: Under 2.5 Gols (Jogo Completo)
+#### Bot 5: Under 2.5 Gols (Jogo Completo)
 **Mercado:** Under 2.5 Gols | **Faixa:** 15-75min | **Para:** Jogos defensivos
 
-### Bot 6: Over 9.5 Escanteios
+#### Bot 6: Over 9.5 Escanteios
 **Mercado:** Over 9.5 Corners | **Faixa:** 20-75min | **Para:** Muita pressão
 
-### Bot 7: Over 4.5 Cartões
+#### Bot 7: Over 4.5 Cartões
 **Mercado:** Over 4.5 Cards | **Faixa:** 20-75min | **Para:** Jogos pegados
 
-### 📁 Arquivos dos 4 Bots Adicionais
+#### 📁 Arquivos dos 4 Bots Adicionais
 
-1. **GUIA-4-BOTS-ESSENCIAIS.md** - 🇧🇷 **COMECE AQUI!** Guia completo dos 4 bots
+1. **GUIA-4-BOTS-ESSENCIAIS.md** - 🇧🇷 Guia completo dos 4 bots
 2. **CONFIG-RAPIDA-4-BOTS.md** - Configurações rápidas para os 4 bots
-3. **bot-over-25-gols.json** - Configuração Over 2.5 Gols
-4. **bot-under-25-gols.json** - Configuração Under 2.5 Gols
-5. **bot-over-escanteios.json** - Configuração Over Escanteios
-6. **bot-over-cartoes.json** - Configuração Over Cartões
-
-### 🚀 Início Rápido - 4 Bots Adicionais
-
-1. **Para guia completo:** Leia [GUIA-4-BOTS-ESSENCIAIS.md](GUIA-4-BOTS-ESSENCIAIS.md)
-2. **Para configurar:** Use [CONFIG-RAPIDA-4-BOTS.md](CONFIG-RAPIDA-4-BOTS.md)
-
----
-
-## 🔄 Todos os 7 Bots Disponíveis
-
-Você agora tem **7 bots essenciais**:
-
-### Bots de Gols:
-1. **Bot 1T COM gol** (Over 0.5 1T) - Jogos ofensivos no 1T
-2. **Bot 1T SEM gol** (Under 0.5 1T) - Jogos travados no 1T
-3. **Bot 2T COM gol** (Over 0.5 2T) - Segundo tempo
-4. **Over 2.5 Gols** - Jogos com 3+ gols (jogo completo)
-5. **Under 2.5 Gols** - Jogos com max 2 gols (jogo completo)
-
-### Bots de Mercados Alternativos:
-6. **Over 9.5 Escanteios** - Jogos com muitos corners
-7. **Over 4.5 Cartões** - Jogos pegados/nervosos
-
-### ⚠️ REGRAS IMPORTANTES:
-
-1. **No primeiro tempo:** Escolha **APENAS UM** bot (COM gol OU SEM gol, nunca ambos!)
-2. **Entre tempos:** Se entrou no 1T, **NÃO** entre no 2T do mesmo jogo
-3. **Over vs Under:** Não combine Over e Under do mesmo mercado
-4. **Estratégia:** Analise o jogo e escolha o bot mais adequado para cada situação
-
----
-
-## 📊 Comparação Completa dos 7 Bots
-
-| Bot | Mercado | Faixa (min) | Condições | Ideal Para |
-|-----|---------|-------------|-----------|------------|
-| **1. Over 0.5 1T** | Gol 1T | 10-35 | 4 | Jogos ofensivos 1T |
-| **2. Under 0.5 1T** | Sem gol 1T | 10-35 | 6 | Jogos travados 1T |
-| **3. Over 0.5 2T** | Gol 2T | 50-80 | 6 | Segundo tempo |
-| **4. Over 2.5** | 3+ gols | 15-75 | 7 | Jogos muito ofensivos |
-| **5. Under 2.5** | Max 2 gols | 15-75 | 5 | Jogos defensivos |
-| **6. Over 9.5 Corners** | 10+ escanteios | 20-75 | 4 | Muita pressão |
-| **7. Over 4.5 Cards** | 5+ cartões | 20-75 | 3 | Jogos pegados |
 
 ---
 
@@ -175,25 +123,44 @@ Você agora tem **7 bots essenciais**:
 ### Por Característica do Jogo:
 
 **🔥 Jogo MUITO OFENSIVO (muitos gols esperados):**
-→ Over 2.5 Gols
+→ Over 2.5 Gols (Bot 4)
 
 **⚽ Jogo OFENSIVO no 1T:**
-→ Over 0.5 1T
+→ Over 0.5 1T (Bot 1 ou Bot 04 dos 14 especializados)
 
 **🚫 Jogo TRAVADO no 1T:**
-→ Under 0.5 1T
+→ Under 0.5 1T (Bot 2 ou Bot 06 dos 14 especializados)
 
 **🔒 Jogo DEFENSIVO (poucos gols):**
-→ Under 2.5 Gols
+→ Under 2.5 Gols (Bot 5)
 
 **⏱️ Segundo Tempo (time buscando resultado):**
-→ Over 0.5 2T
+→ Over 0.5 2T (Bot 3 ou Bot 10 dos 14 especializados)
 
 **📐 Muito ATAQUE/PRESSÃO:**
-→ Over Escanteios
+→ Over Escanteios (Bot 6 ou Bots 01-02 dos 14 especializados)
 
 **🟨 Jogo NERVOSO/PEGADO:**
-→ Over Cartões
+→ Over Cartões (Bot 7)
+
+**🤝 Jogo EQUILIBRADO:**
+→ Empate (Bots 07-09 dos 14 especializados)
+
+**🏆 FAVORITO dominando:**
+→ Vitória Favorito (Bots 12-13 dos 14 especializados)
+
+**🚌 VISITANTE defendendo bem:**
+→ Vitória Visitante (Bot 14 dos 14 especializados)
+
+---
+
+## ⚠️ REGRAS IMPORTANTES
+
+1. **No primeiro tempo:** Escolha **APENAS UM** bot (COM gol OU SEM gol, nunca ambos!)
+2. **Entre tempos:** Se entrou no 1T, **NÃO** entre no 2T do mesmo jogo
+3. **Over vs Under:** Não combine Over e Under do mesmo mercado
+4. **Estratégia:** Analise o jogo e escolha o bot mais adequado para cada situação
+5. **Gestão:** Respeite sempre o percentual da banca recomendado
 
 ---
 

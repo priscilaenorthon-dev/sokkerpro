@@ -1,0 +1,73 @@
+{
+  "nome_bot": "Gol 1T Moderado - Over 1.5",
+  "numero": 5,
+  "mercado": "Gols Primeiro Tempo",
+  "estrategia": "Moderada",
+  "descricao": "Bot moderado para 2+ gols no primeiro tempo em jogos ofensivos",
+  
+  "configuracao_essencial": {
+    "mercado_alvo": "Over 1.5 Gols Primeiro Tempo (2+ gols)",
+    "faixa_minutos": {
+      "de": 15,
+      "ate": 40,
+      "justificativa": "Período onde ainda há tempo para mais gols"
+    },
+    "odd_minima_entrada": 1.8,
+    "valor_entrada": 0,
+    "filtro_placar": "Pelo menos 1 gol já marcado"
+  },
+  
+  "condicoes_ao_vivo": {
+    "gols": {
+      "gols_atuais": {
+        "minimo": 1,
+        "justificativa": "Jogo já abriu"
+      }
+    },
+    "ataques": {
+      "ataques_perigosos": {
+        "minimo": 10,
+        "justificativa": "Jogo muito ofensivo"
+      }
+    },
+    "chutes": {
+      "chutes_no_gol": {
+        "minimo": 5,
+        "justificativa": "Muitas finalizações"
+      }
+    },
+    "contexto": {
+      "jogo_aberto": true,
+      "justificativa": "Ambos atacando, espaços disponíveis"
+    }
+  },
+  
+  "condicoes_pre_jogo": {
+    "historico": {
+      "media_gols_1t": {
+        "minimo": 1.5,
+        "justificativa": "Times ofensivos no 1T"
+      }
+    },
+    "prognostico": {
+      "over_15_1t": {
+        "minimo": 50,
+        "justificativa": "Probabilidade razoável"
+      },
+      "ambas_marcam_1t": {
+        "minimo": 45,
+        "opcional": true
+      }
+    }
+  },
+  
+  "filtros_entrada": {
+    "ideal": "Jogo 1x0 ou 1x1 aos 20-25min com muitas chances",
+    "bonus": "Time perdendo pressionando forte"
+  },
+  
+  "gestao_risco": {
+    "tipo": "Moderada",
+    "banca_recomendada": "2-3%"
+  }
+}

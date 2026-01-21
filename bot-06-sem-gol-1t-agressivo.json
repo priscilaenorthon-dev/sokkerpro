@@ -1,0 +1,79 @@
+{
+  "nome_bot": "Sem Gol 1T Agressivo - Under 0.5",
+  "numero": 6,
+  "mercado": "Gols Primeiro Tempo",
+  "estrategia": "Agressiva",
+  "descricao": "Bot agressivo apostando que NÃO sairá gol no 1T em jogos muito travados",
+  
+  "configuracao_essencial": {
+    "mercado_alvo": "Under 0.5 Gols Primeiro Tempo (sem gols)",
+    "faixa_minutos": {
+      "de": 20,
+      "ate": 40,
+      "justificativa": "Entrada após confirmar jogo travado"
+    },
+    "odd_minima_entrada": 1.5,
+    "valor_entrada": 0,
+    "filtro_placar": "0x0 OBRIGATÓRIO"
+  },
+  
+  "condicoes_ao_vivo": {
+    "gols": {
+      "gols_atuais": {
+        "maximo": 0,
+        "obrigatorio": true
+      }
+    },
+    "ataques": {
+      "ataques_perigosos": {
+        "maximo": 4,
+        "justificativa": "Jogo muito travado"
+      },
+      "grandes_chances": {
+        "maximo": 1,
+        "justificativa": "Poucas chances claras"
+      }
+    },
+    "chutes": {
+      "chutes_no_gol": {
+        "maximo": 2,
+        "justificativa": "Quase sem finalizações"
+      }
+    },
+    "posse": {
+      "jogo_equilibrado": true,
+      "diferenca_posse_max": 10,
+      "justificativa": "Ninguém dominando"
+    }
+  },
+  
+  "condicoes_pre_jogo": {
+    "historico": {
+      "media_gols_1t": {
+        "maximo": 0.7,
+        "justificativa": "Histórico de 1T sem gols"
+      },
+      "jogos_sem_gol_1t": {
+        "minimo": 60,
+        "unidade": "porcentagem",
+        "justificativa": "60%+ dos jogos sem gol no 1T"
+      }
+    },
+    "prognostico": {
+      "under_05_1t": {
+        "minimo": 55
+      }
+    }
+  },
+  
+  "filtros_entrada": {
+    "ideal": "Clássico equilibrado 0x0 aos 25-30min",
+    "contexto": "Times se estudando, jogo tático"
+  },
+  
+  "gestao_risco": {
+    "tipo": "Agressiva",
+    "banca_recomendada": "2-4%",
+    "alerta": "Se sair gol, perda imediata"
+  }
+}

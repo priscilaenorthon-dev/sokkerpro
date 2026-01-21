@@ -1,0 +1,84 @@
+{
+  "nome_bot": "Gol 1T Conservador - Over 0.5",
+  "numero": 4,
+  "mercado": "Gols Primeiro Tempo",
+  "estrategia": "Conservadora",
+  "descricao": "Bot conservador para gol no 1T com foco em dados históricos sólidos",
+  
+  "configuracao_essencial": {
+    "mercado_alvo": "Over 0.5 Gols Primeiro Tempo",
+    "faixa_minutos": {
+      "de": 15,
+      "ate": 35,
+      "justificativa": "Período seguro com dados suficientes"
+    },
+    "odd_minima_entrada": 1.4,
+    "valor_entrada": 0,
+    "filtro_placar": "Empate 0x0"
+  },
+  
+  "condicoes_ao_vivo": {
+    "ataques": {
+      "ataques_perigosos": {
+        "minimo": 6,
+        "justificativa": "Ambos criando chances reais"
+      },
+      "grandes_chances": {
+        "minimo": 2,
+        "justificativa": "Chances claras de gol criadas"
+      }
+    },
+    "chutes": {
+      "chutes_no_gol": {
+        "minimo": 3,
+        "justificativa": "Finalizações perigosas"
+      },
+      "chutes_trave": {
+        "minimo": 1,
+        "opcional": true,
+        "justificativa": "Bônus: quase-gols indicam pressão"
+      }
+    },
+    "pressao": {
+      "barra_pressao": {
+        "minimo": 60,
+        "aplicado_a": "Qualquer Time"
+      }
+    }
+  },
+  
+  "condicoes_pre_jogo": {
+    "historico": {
+      "media_gols_1t": {
+        "minimo": 1.2,
+        "justificativa": "Histórico forte de gols no 1T"
+      },
+      "ultimos_5_jogos_casa_1t": {
+        "gols_marcados": {
+          "minimo": 4,
+          "justificativa": "Mandante marca em casa no 1T"
+        }
+      }
+    },
+    "prognostico": {
+      "over_05_1t": {
+        "minimo": 60,
+        "justificativa": "Alta probabilidade segundo prognóstico"
+      }
+    }
+  },
+  
+  "filtros_entrada": {
+    "evitar": [
+      "Times ultra defensivos",
+      "Jogos muito travados",
+      "Chuva forte"
+    ],
+    "ideal": "Jogo 0x0 aos 20min com muitas chances"
+  },
+  
+  "gestao_risco": {
+    "tipo": "Conservadora",
+    "banca_recomendada": "1-2%"
+  }
+}

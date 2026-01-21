@@ -6,6 +6,36 @@ Este repositório contém configurações otimizadas de bots para a plataforma S
 
 ---
 
+## 🎯 NOVO! 14 Bots Especializados
+
+### 📊 Coleção Completa de Bots para 6 Mercados
+
+Criamos **14 bots especializados** cobrindo os principais mercados do SokkerPRO com estratégias conservadoras, moderadas e agressivas.
+
+### 📁 Arquivos Principais
+
+1. **GUIA-14-BOTS-ESPECIALIZADOS.md** - 🇧🇷 **COMECE AQUI!** Guia completo dos 14 bots
+2. **REFERENCIA-RAPIDA-14-BOTS.md** - Tabela resumida e escolha rápida por situação
+3. **bot-01 a bot-14** - 14 arquivos JSON com configurações detalhadas
+
+### 🚀 Início Rápido - 14 Bots
+
+1. **Para guia completo:** Leia [GUIA-14-BOTS-ESPECIALIZADOS.md](GUIA-14-BOTS-ESPECIALIZADOS.md)
+2. **Para referência rápida:** Use [REFERENCIA-RAPIDA-14-BOTS.md](REFERENCIA-RAPIDA-14-BOTS.md)
+
+### 📊 Distribuição por Mercado
+
+| Mercado | Quantidade | Bots |
+|---------|------------|------|
+| **Escanteios** | 3 bots | Over 8.5, Over 10.5, Under 7.5 |
+| **Gols 1º Tempo** | 3 bots | Over 0.5, Over 1.5, Under 0.5 |
+| **Empate** | 3 bots | Conservador, Tático, Zebra |
+| **Gols 2º Tempo** | 2 bots | Over 0.5, Over 1.5 |
+| **Vitória Favorito** | 2 bots | Dominante, Virada |
+| **Vitória Visitante** | 1 bot | Value |
+
+---
+
 ## ⚽ Bot 1: Gol no Primeiro Tempo (10-35min)
 
 **Mercado:** Over 0.5 Gols (1T)  

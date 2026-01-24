@@ -1,6 +1,19 @@
 # ⚡ CONFIGURAÇÃO RÁPIDA - Bot Gol 2º Tempo
 
-## 🎯 PASSO 2: Configuração Essencial
+> **Seguindo o formato oficial do PDF SokkerPRO**
+
+## 📋 PASSO 1: Informações Básicas
+
+**Mercado de Gols:**
+- **Tipo:** Mais um gol até o fim do segundo tempo
+- **Linha:** Over 0.5 Gols (2T)
+- **Como funciona:** Precisa sair pelo menos 1 gol no segundo tempo. Não importa o placar do 1T.
+
+**Nome do Bot:** `Gol 2T` ou `Over 0.5 - 2T`
+
+---
+
+## ⚙️ PASSO 2: Configuração Essencial
 
 ```
 Faixa de Minutos

@@ -12,29 +12,74 @@ Complementam perfeitamente os bots que você já tem:
 
 ## ⚽ Bot 1: Over 2.5 Gols (Jogo Completo)
 
-### 🎯 Objetivo
-Detectar jogos que terão **3 ou mais gols** no tempo completo.
+## 📋 Passo 1: Informações Básicas
 
-### ⚙️ Configuração
-- **Mercado:** Over 2.5 Gols
-- **Faixa:** Minuto 15 até 75
-- **Odd Mínima:** 1.5
-- **Placar:** Qualquer
+### Mercado
+**Over 2.5 Gols** - Jogo completo terá 3 ou mais gols
 
-### 📊 Condições Principais
+### Como Funciona
+Detecta jogos que terão **3 ou mais gols** no tempo completo, buscando partidas abertas com ambos os times atacando e criando chances.
 
-**Ao Vivo (4 condições):**
-1. Pelo menos **1 gol já marcado**
-2. **12+ ataques perigosos** somados
-3. **6+ chutes no gol** somados
-4. **60%+ barra de pressão** de qualquer time
+### Nome do Bot
+`bot-over-2-5-gols`
 
-**Pré-Jogo (3 condições):**
-1. **2.8+ média de gols** total (histórico)
-2. **55%+ prognóstico** Over 2.5
-3. **60%+ prognóstico** Ambas Marcam
+---
 
-### 💡 Cenários Ideais
+## ⚙️ Passo 2: Configuração Essencial
+
+### Faixa de Minutos
+**15 até 75**
+
+**Por quê?**  
+Período suficiente para avaliar se o jogo tem ritmo ofensivo, mas ainda com tempo para os 3 gols saírem.
+
+### Odd Mínima de Entrada
+**1.5**
+
+**Por quê?**  
+Esta odd garante valor mínimo para suas entradas. O bot pode gerar APENAS alertas (sem entradas automáticas) ou fazer entradas automáticas, dependendo da configuração do valor de entrada.
+
+### Valor de Entrada
+- **0** = Apenas alertas (você decide manualmente se entra)
+- **Valor definido** = Bot contabiliza lucro/prejuízo automaticamente
+
+### Filtro de Placar
+**Qualquer**
+
+**Por quê?**  
+Idealmente com pelo menos 1 gol já marcado (1x0, 1x1, 2x0, etc.), indicando que o jogo está movimentado.
+
+### Gestão de Banca
+- **Recomendado:** 1-2% da banca por entrada
+- **Máximo:** Nunca mais que 5% da banca
+- **Tipo:** Valor fixo por entrada
+
+---
+
+## 🎯 Passo 3: Condições
+
+### Condições AO VIVO
+
+> **Nota:** Estas condições se aplicam a **Casa/Visitante/Ambos Somados/Qualquer Time** conforme especificado em cada linha.
+
+**4 Condições Principais:**
+1. **Pelo menos 1 gol já marcado** - Jogo movimentado
+2. **12+ ataques perigosos (Ambos Somados)** - Alto volume ofensivo
+3. **6+ chutes no gol (Ambos Somados)** - Muitas finalizações
+4. **60%+ barra de pressão (Qualquer Time)** - Dominância ofensiva
+
+### Condições PRÉ-JOGO
+
+> **Nota H2H:** Médias baseadas nos confrontos diretos (Head to Head) entre os times.
+
+**3 Condições Principais:**
+1. **2.8+ média de gols total (histórico)** - Times costumam fazer jogos com gols
+2. **55%+ prognóstico Over 2.5** - Probabilidade alta
+3. **60%+ prognóstico Ambas Marcam** - Ambos costumam balançar as redes
+
+---
+
+## 💡 Cenários Ideais
 
 **✅ PERFEITO:**
 - Jogo já tem 1-2 gols (1x1, 2x0, 1x2)
@@ -58,27 +103,74 @@ Detectar jogos que terão **3 ou mais gols** no tempo completo.
 
 ## 🚫 Bot 2: Under 2.5 Gols (Jogo Completo)
 
-### 🎯 Objetivo
-Detectar jogos que terão **máximo 2 gols** no tempo completo.
+## 📋 Passo 1: Informações Básicas
 
-### ⚙️ Configuração
-- **Mercado:** Under 2.5 Gols
-- **Faixa:** Minuto 15 até 75
-- **Odd Mínima:** 1.5
-- **Placar:** Qualquer
+### Mercado
+**Under 2.5 Gols** - Jogo completo terá máximo 2 gols
 
-### 📊 Condições Principais
+### Como Funciona
+Detecta jogos que terão **máximo 2 gols** no tempo completo, focando em partidas travadas, defensivas e com poucas chances criadas.
 
-**Ao Vivo (3 condições - MÁXIMOS):**
-1. **MÁXIMO 1 gol** marcado
-2. **MÁXIMO 8 ataques perigosos** somados
-3. **MÁXIMO 4 chutes no gol** somados
+### Nome do Bot
+`bot-under-2-5-gols`
 
-**Pré-Jogo (2 condições):**
-1. **MÁXIMO 2.2 média de gols** total
-2. **MÍNIMO 55% prognóstico** Under 2.5
+---
 
-### 💡 Cenários Ideais
+## ⚙️ Passo 2: Configuração Essencial
+
+### Faixa de Minutos
+**15 até 75**
+
+**Por quê?**  
+Período para confirmar que o jogo está travado e sem muitas chances, indicando tendência de poucos gols.
+
+### Odd Mínima de Entrada
+**1.5**
+
+**Por quê?**  
+Esta odd garante valor mínimo para suas entradas. O bot pode gerar APENAS alertas (sem entradas automáticas) ou fazer entradas automáticas, dependendo da configuração do valor de entrada.
+
+### Valor de Entrada
+- **0** = Apenas alertas (você decide manualmente se entra)
+- **Valor definido** = Bot contabiliza lucro/prejuízo automaticamente
+
+### Filtro de Placar
+**Qualquer**
+
+**Por quê?**  
+Idealmente 0x0 ou 1x0 após 30+ minutos, indicando jogo fechado.
+
+### Gestão de Banca
+- **Recomendado:** 1-2% da banca por entrada
+- **Máximo:** Nunca mais que 5% da banca
+- **Tipo:** Valor fixo por entrada
+
+---
+
+## 🎯 Passo 3: Condições
+
+### Condições AO VIVO
+
+> **⚠️ ATENÇÃO:** Condições INVERSAS - Usamos MÁXIMO em vez de MÍNIMO!
+
+> **Nota:** Estas condições se aplicam a **Casa/Visitante/Ambos Somados/Qualquer Time** conforme especificado em cada linha.
+
+**3 Condições Principais (MÁXIMOS):**
+1. **MÁXIMO 1 gol marcado** - Jogo ainda fechado
+2. **MÁXIMO 8 ataques perigosos (Ambos Somados)** - Pouca movimentação
+3. **MÁXIMO 4 chutes no gol (Ambos Somados)** - Poucas finalizações
+
+### Condições PRÉ-JOGO
+
+> **Nota H2H:** Médias baseadas nos confrontos diretos (Head to Head) entre os times.
+
+**2 Condições Principais:**
+1. **MÁXIMO 2.2 média de gols total** - Histórico de jogos fechados
+2. **MÍNIMO 55% prognóstico Under 2.5** - Probabilidade alta
+
+---
+
+## 💡 Cenários Ideais
 
 **✅ PERFEITO:**
 - Jogo 0x0 ou 1x0 após 30+ minutos
@@ -101,26 +193,71 @@ Detectar jogos que terão **máximo 2 gols** no tempo completo.
 
 ## 📐 Bot 3: Over 9.5 Escanteios
 
-### 🎯 Objetivo
-Detectar jogos que terão **10 ou mais escanteios** no total.
+## 📋 Passo 1: Informações Básicas
 
-### ⚙️ Configuração
-- **Mercado:** Over 9.5 Escanteios
-- **Faixa:** Minuto 20 até 75
-- **Odd Mínima:** 1.5
-- **Placar:** Qualquer
+### Mercado
+**Over 9.5 Escanteios** - Jogo completo terá 10 ou mais escanteios
 
-### 📊 Condições Principais
+### Como Funciona
+Detecta jogos que terão **10 ou mais escanteios** no total, buscando partidas com muito ataque pelas laterais e pressão ofensiva constante.
 
-**Ao Vivo (3 condições):**
-1. **4+ escanteios** já ocorridos (aos 20-30min)
-2. **2+ escanteios** nos últimos 10 minutos
-3. **10+ ataques perigosos** somados
+### Nome do Bot
+`bot-over-9-5-escanteios`
 
-**Pré-Jogo (1 condição):**
-1. **10+ média de escanteios** total (histórico)
+---
 
-### 💡 Fórmula de Projeção
+## ⚙️ Passo 2: Configuração Essencial
+
+### Faixa de Minutos
+**20 até 75**
+
+**Por quê?**  
+Tempo suficiente para estabelecer um ritmo de escanteios e projetar o total final do jogo.
+
+### Odd Mínima de Entrada
+**1.5**
+
+**Por quê?**  
+Esta odd garante valor mínimo para suas entradas. O bot pode gerar APENAS alertas (sem entradas automáticas) ou fazer entradas automáticas, dependendo da configuração do valor de entrada.
+
+### Valor de Entrada
+- **0** = Apenas alertas (você decide manualmente se entra)
+- **Valor definido** = Bot contabiliza lucro/prejuízo automaticamente
+
+### Filtro de Placar
+**Qualquer**
+
+**Por quê?**  
+O importante é o volume de ataques e pressão, independente do placar.
+
+### Gestão de Banca
+- **Recomendado:** 1-2% da banca por entrada
+- **Máximo:** Nunca mais que 5% da banca
+- **Tipo:** Valor fixo por entrada
+
+---
+
+## 🎯 Passo 3: Condições
+
+### Condições AO VIVO
+
+> **Nota:** Estas condições se aplicam a **Casa/Visitante/Ambos Somados/Qualquer Time** conforme especificado em cada linha.
+
+**3 Condições Principais:**
+1. **4+ escanteios já ocorridos (aos 20-30min)** - Bom ritmo de corners
+2. **2+ escanteios nos últimos 10 minutos** - Continuidade do ritmo
+3. **10+ ataques perigosos (Ambos Somados)** - Muita pressão ofensiva
+
+### Condições PRÉ-JOGO
+
+> **Nota H2H:** Médias baseadas nos confrontos diretos (Head to Head) entre os times.
+
+**1 Condição Principal:**
+1. **10+ média de escanteios total (histórico)** - Times costumam gerar muitos corners
+
+---
+
+## 💡 Fórmula de Projeção
 
 ```
 Projeção = (Escanteios Atuais / Minuto Atual) × 90
@@ -130,7 +267,9 @@ Exemplo:
 - Projeção = (4 / 25) × 90 = 14.4 escanteios ✅
 ```
 
-### 💡 Cenários Ideais
+---
+
+## 💡 Cenários Ideais
 
 **✅ PERFEITO:**
 - Bom ritmo de escanteios desde início
@@ -153,23 +292,66 @@ Exemplo:
 
 ## 🟨 Bot 4: Over 4.5 Cartões
 
-### 🎯 Objetivo
-Detectar jogos que terão **5 ou mais cartões** (amarelos/vermelhos) no total.
+## 📋 Passo 1: Informações Básicas
 
-### ⚙️ Configuração
-- **Mercado:** Over 4.5 Cartões
-- **Faixa:** Minuto 20 até 75
-- **Odd Mínima:** 1.5
-- **Placar:** Qualquer
+### Mercado
+**Over 4.5 Cartões** - Jogo completo terá 5 ou mais cartões (amarelos/vermelhos)
 
-### 📊 Condições Principais
+### Como Funciona
+Detecta jogos que terão **5 ou mais cartões** no total, focando em partidas nervosas, com muitas faltas, clássicos e jogos decisivos.
 
-**Ao Vivo (2 condições):**
-1. **2+ cartões amarelos** já dados
-2. **15+ faltas** cometidas (somadas)
+### Nome do Bot
+`bot-over-4-5-cartoes`
 
-**Pré-Jogo (1 condição):**
-1. **5+ média de cartões** amarelos (histórico)
+---
+
+## ⚙️ Passo 2: Configuração Essencial
+
+### Faixa de Minutos
+**20 até 75**
+
+**Por quê?**  
+Tempo para avaliar se o jogo está "pegado" com muitas faltas e cartões sendo distribuídos.
+
+### Odd Mínima de Entrada
+**1.5**
+
+**Por quê?**  
+Esta odd garante valor mínimo para suas entradas. O bot pode gerar APENAS alertas (sem entradas automáticas) ou fazer entradas automáticas, dependendo da configuração do valor de entrada.
+
+### Valor de Entrada
+- **0** = Apenas alertas (você decide manualmente se entra)
+- **Valor definido** = Bot contabiliza lucro/prejuízo automaticamente
+
+### Filtro de Placar
+**Qualquer**
+
+**Por quê?**  
+O importante é o nível de rivalidade, faltas e intensidade do jogo, independente do placar.
+
+### Gestão de Banca
+- **Recomendado:** 1-2% da banca por entrada
+- **Máximo:** Nunca mais que 5% da banca
+- **Tipo:** Valor fixo por entrada
+
+---
+
+## 🎯 Passo 3: Condições
+
+### Condições AO VIVO
+
+> **Nota:** Estas condições se aplicam a **Casa/Visitante/Ambos Somados/Qualquer Time** conforme especificado em cada linha.
+
+**2 Condições Principais:**
+1. **2+ cartões amarelos já dados** - Árbitro distribuindo cartões
+2. **15+ faltas cometidas (Ambos Somados)** - Jogo pegado com muitas infrações
+
+### Condições PRÉ-JOGO
+
+> **Nota H2H:** Médias baseadas nos confrontos diretos (Head to Head) entre os times.
+
+**1 Condição Principal:**
+1. **5+ média de cartões amarelos (histórico)** - Times costumam ser punidos
 
 **Contextos Favoráveis:**
 - Clássicos e derbies
@@ -177,7 +359,9 @@ Detectar jogos que terão **5 ou mais cartões** (amarelos/vermelhos) no total.
 - Jogo decisivo/nervoso
 - Rivalidade histórica
 
-### 💡 Cenários Ideais
+---
+
+## 💡 Cenários Ideais
 
 **✅ PERFEITO:**
 - Clássicos (Fla x Flu, Barça x Real, Boca x River)

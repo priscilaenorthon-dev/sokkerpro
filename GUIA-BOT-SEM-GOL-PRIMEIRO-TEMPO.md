@@ -1,29 +1,54 @@
 # 🚫 Bot SokkerPRO - SEM Gol no Primeiro Tempo
 
-## 📋 Descrição
-Configuração otimizada de bot para o mercado **"Under 0.5 Gols no Primeiro Tempo"** (NÃO sair gol no primeiro tempo), focando em entradas entre os minutos 10 e 35 com odd mínima de 1.5.
+## 📋 Passo 1: Informações Básicas
 
-## 🎯 Objetivo
-Identificar jogos ao vivo onde há alta probabilidade de **NÃO sair gol no primeiro tempo**, baseando-se em:
-- Jogos travados com poucas chances criadas
-- Times defensivos que se estudam no 1T
-- Estatísticas ao vivo mostrando jogo fechado
-- Histórico de jogos sem gols no 1T
+**Mercado de Gols:**
+- **Tipo:** Sem mais gols até o fim do primeiro tempo
+- **Linha:** Under 0.5 Gols (1T)
+- **Como funciona:** Aposta ganha se o primeiro tempo terminar 0x0. Se sair qualquer gol no primeiro tempo, você perde.
 
-## ⚙️ Configuração Principal
+**Nome do Bot:** `Sem Gol 1T` ou `Under 0.5 - 1T`
 
-### 1️⃣ Essencial
-- **Mercado:** Under 0.5 Gols (1T) - NÃO sair gol no primeiro tempo
-- **Faixa de Minutos:** 10 até 35
-  - Por quê? Confirmar que jogo está travado antes de entrar
-- **Odd Mínima:** 1.5
-- **Valor de Entrada:** 0 (apenas alertas) ou defina um valor para contabilizar lucro/prejuízo
-- **Filtro de Placar:** Empate (0x0)
-  - CRÍTICO: Se já saiu gol, já perdemos a aposta!
+---
 
-### 2️⃣ Condições AO VIVO (Principais)
+## ⚙️ Passo 2: Configuração Essencial
 
-⚠️ **ATENÇÃO:** Condições INVERSAS - Usamos MÁXIMO em vez de MÍNIMO!
+### Faixa de Minutos
+**10 até 35**
+
+**Por quê?**  
+Confirmar que jogo está travado antes de entrar. Este período é suficiente para avaliar se ambos os times estão jogando de forma defensiva ou sem criar chances claras.
+
+### Odd Mínima de Entrada
+**1.5**
+
+**Por quê?**  
+Esta odd garante valor mínimo para suas entradas. O bot pode gerar APENAS alertas (sem entradas automáticas) ou fazer entradas automáticas, dependendo da configuração do valor de entrada.
+
+### Valor de Entrada
+- **0** = Apenas alertas (você decide manualmente se entra)
+- **Valor definido** = Bot contabiliza lucro/prejuízo automaticamente
+
+### Filtro de Placar
+**Empate (0x0)**
+
+**Por quê?**  
+CRÍTICO: Se já saiu gol, já perdemos a aposta! O placar precisa estar obrigatoriamente em 0x0.
+
+### Gestão de Banca
+- **Recomendado:** 1-2% da banca por entrada
+- **Máximo:** Nunca mais que 5% da banca
+- **Tipo:** Valor fixo por entrada
+
+---
+
+## 🎯 Passo 3: Condições
+
+### Condições AO VIVO
+
+> **⚠️ ATENÇÃO:** Condições INVERSAS - Usamos MÁXIMO em vez de MÍNIMO!
+
+> **Nota:** Estas condições se aplicam a **Casa/Visitante/Ambos Somados/Qualquer Time** conforme especificado em cada linha.
 
 #### Ataques
 | Estatística | Aplicado a | Valor MÁXIMO | Motivo |
@@ -40,7 +65,9 @@ Identificar jogos ao vivo onde há alta probabilidade de **NÃO sair gol no prim
 - **Barra de Pressão (Ambos Times):** MÁXIMO 50%
   - Nenhum time dominando - jogo equilibrado e fechado
 
-### 3️⃣ Condições PRÉ-JOGO (Históricas)
+### Condições PRÉ-JOGO
+
+> **Nota H2H:** Médias baseadas nos confrontos diretos (Head to Head) entre os times.
 
 #### Médias H2H - Gols
 - **Média Gols 1T (Ambos):** MÁXIMO 0.6
@@ -52,6 +79,8 @@ Identificar jogos ao vivo onde há alta probabilidade de **NÃO sair gol no prim
 - **Ambas Marcam Não:** ≥ 50% (opcional)
   - Reforça que pelo menos um time não marcará
 
+---
+
 ## 📊 Estratégia de Entrada
 
 ### Quando Entrar?
@@ -62,10 +91,7 @@ O bot deve alertar quando:
 ✅ Minuto entre 10 e 35  
 ✅ Jogo empatado 0x0 (SEM GOLS!)  
 
-### Gestão de Banca
-- **Recomendado:** 1-2% da banca por entrada
-- **Máximo:** Nunca mais que 5% da banca
-- **Tipo:** Valor fixo por entrada
+---
 
 ## 💡 Diferenças do Bot "COM Gol"
 

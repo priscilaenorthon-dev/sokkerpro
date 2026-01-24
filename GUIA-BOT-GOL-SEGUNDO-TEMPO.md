@@ -1,29 +1,61 @@
 # 🎯 Bot SokkerPRO - Gol no Segundo Tempo
 
-## 📋 Descrição
-Configuração otimizada de bot para o mercado **"Over 0.5 Gols no Segundo Tempo"** (sair pelo menos 1 gol no segundo tempo), focando em entradas entre os minutos 50 e 80 com odd mínima de 1.5.
+## 📋 Passo 1: Informações Básicas
 
-## 🎯 Objetivo
-Identificar jogos ao vivo onde há alta probabilidade de sair um gol no segundo tempo, aproveitando:
+### Mercado
+**Over 0.5 Gols (Segundo Tempo)** - Sair pelo menos 1 gol no segundo tempo
+
+### Como Funciona
+Este bot identifica jogos ao vivo onde há alta probabilidade de sair um gol no segundo tempo, aproveitando:
 - A intensidade maior do segundo tempo (times buscando resultado)
 - Cansaço defensivo e espaços que se abrem
 - Urgência de times que precisam do gol
 - Estatísticas ao vivo e histórico dos times
 
-## ⚙️ Configuração Principal
+### Nome do Bot
+`bot-gol-segundo-tempo`
 
-### 1️⃣ Essencial
-- **Mercado:** Over 0.5 Gols (2T) - Sair gol no segundo tempo
-- **Faixa de Minutos:** 50 até 80
-  - Por quê? Período de busca por resultado, antes da pressão/desespero final (80-90min)
-- **Odd Mínima:** 1.5
-- **Valor de Entrada:** 0 (apenas alertas) ou defina um valor para contabilizar lucro/prejuízo
-- **Filtro de Placar:** Qualquer
-  - Diferente do 1T! Times perdendo ou empatados atacam mais no 2T
+---
 
-### 2️⃣ Condições AO VIVO (Principais)
+## ⚙️ Passo 2: Configuração Essencial
+
+### Faixa de Minutos
+**50 até 80**
+
+**Por quê?**  
+Período de busca por resultado, antes da pressão/desespero final (80-90min). Times buscam resultado com mais urgência no 2T, espaços se abrem com cansaço defensivo e substituições ofensivas criam mais oportunidades.
+
+### Odd Mínima de Entrada
+**1.5**
+
+**Por quê?**  
+Esta odd garante valor mínimo para suas entradas. O bot pode gerar APENAS alertas (sem entradas automáticas) ou fazer entradas automáticas, dependendo da configuração do valor de entrada.
+
+### Valor de Entrada
+- **0** = Apenas alertas (você decide manualmente se entra)
+- **Valor definido** = Bot contabiliza lucro/prejuízo automaticamente
+
+### Filtro de Placar
+**Qualquer**
+
+**Por quê?**  
+Diferente do 1T! Times perdendo ou empatados atacam mais no 2T. Tanto jogos empatados quanto com placar aberto são ideais para gols no segundo tempo.
+
+### Gestão de Banca
+- **Recomendado:** 1-2% da banca por entrada
+- **Máximo:** Nunca mais que 5% da banca
+- **Tipo:** Valor fixo por entrada
+
+---
+
+## 🎯 Passo 3: Condições
+
+### Condições AO VIVO
+
+> **Nota:** Estas condições se aplicam a **Casa/Visitante/Ambos Somados/Qualquer Time** conforme especificado em cada linha.
 
 #### Ataques
+
 | Estatística | Aplicado a | Valor Mínimo | Motivo |
 |-------------|------------|--------------|--------|
 | Ataques Perigosos Totais | Ambos Somados | 8 | Maior que 1T - continuidade ofensiva |
@@ -47,8 +79,6 @@ Identificar jogos ao vivo onde há alta probabilidade de sair um gol no segundo 
 - **Defesas do Goleiro (Qualquer Time):** Mínimo 2
   - Múltiplas defesas = finalizações perigosas reais
 
-### 3️⃣ Condições PRÉ-JOGO (Históricas)
-
 #### Médias H2H - Gols
 - **Média Gols Totais (Ambos):** ≥ 2.5
   - Jogos abertos tendem a ter gols no 2T
@@ -70,6 +100,8 @@ Identificar jogos ao vivo onde há alta probabilidade de sair um gol no segundo 
 - **Ambas Marcam:** ≥ 50% (opcional)
   - Aumenta confiança se atendido
 
+---
+
 ## 📊 Estratégia de Entrada
 
 ### Quando Entrar?
@@ -80,10 +112,7 @@ O bot deve alertar quando:
 ✅ Minuto entre 50 e 80  
 ✅ Jogo mostrando sinais de continuidade ofensiva  
 
-### Gestão de Banca
-- **Recomendado:** 1-2% da banca por entrada
-- **Máximo:** Nunca mais que 5% da banca
-- **Tipo:** Valor fixo por entrada
+---
 
 ## 💡 Diferenças em Relação ao Bot de 1º Tempo
 

@@ -1,6 +1,19 @@
 # ⚡ CONFIGURAÇÃO RÁPIDA - Bot SEM Gol 1º Tempo
 
-## 🎯 PASSO 2: Configuração Essencial
+> **Seguindo o formato oficial do PDF SokkerPRO**
+
+## 📋 PASSO 1: Informações Básicas
+
+**Mercado de Gols:**
+- **Tipo:** Sem mais gols até o fim do primeiro tempo
+- **Linha:** Under 0.5 Gols (1T)
+- **Como funciona:** Aposta ganha se o primeiro tempo terminar 0x0. Se sair qualquer gol no primeiro tempo (jogo ficar 1x0, 0x1, 1x1, etc.), você perde.
+
+**Nome do Bot:** `Sem Gol 1T` ou `Under 0.5 - 1T`
+
+---
+
+## ⚙️ PASSO 2: Configuração Essencial
 
 ```
 Faixa de Minutos

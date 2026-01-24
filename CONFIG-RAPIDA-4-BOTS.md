@@ -1,12 +1,19 @@
 # ⚡ 4 BOTS ESSENCIAIS - Configuração Rápida
 
+> **Seguindo o formato oficial do PDF SokkerPRO**
+
 Este documento contém as configurações rápidas para os 4 novos bots essenciais.
 
 ---
 
 ## 🎯 BOT 1: Over 2.5 Gols (Jogo Completo)
 
-### PASSO 2: Configuração Essencial
+### 📋 PASSO 1: Informações Básicas
+**Mercado de Gols:**
+- **Tipo:** Over 2.5 Gols (Jogo Completo)
+- **Como funciona:** Precisa sair 3 gols ou mais no jogo todo (1T + 2T)
+
+### ⚙️ PASSO 2: Configuração Essencial
 ```
 Mercado: Over 2.5 Gols
 Faixa de Minutos: De 15 até 75
@@ -14,7 +21,7 @@ Odd Mínima: 1.5
 Filtro de Placar: Qualquer
 ```
 
-### PASSO 3: Condições
+### 🎯 PASSO 3: Condições
 
 **AO VIVO:**
 - Gols Marcados → Mínimo **1**
@@ -33,7 +40,12 @@ Filtro de Placar: Qualquer
 
 ## 🎯 BOT 2: Under 2.5 Gols (Jogo Completo)
 
-### PASSO 2: Configuração Essencial
+### 📋 PASSO 1: Informações Básicas
+**Mercado de Gols:**
+- **Tipo:** Under 2.5 Gols (Jogo Completo)
+- **Como funciona:** O jogo deve ter no máximo 2 gols (0x0, 1x0, 0x1, 1x1, 2x0, 0x2)
+
+### ⚙️ PASSO 2: Configuração Essencial
 ```
 Mercado: Under 2.5 Gols
 Faixa de Minutos: De 15 até 75
@@ -41,7 +53,7 @@ Odd Mínima: 1.5
 Filtro de Placar: Qualquer
 ```
 
-### PASSO 3: Condições
+### 🎯 PASSO 3: Condições
 
 **AO VIVO:**
 - Gols Marcados → MÁXIMO **1**
@@ -58,7 +70,12 @@ Filtro de Placar: Qualquer
 
 ## 🎯 BOT 3: Over 9.5 Escanteios
 
-### PASSO 2: Configuração Essencial
+### 📋 PASSO 1: Informações Básicas
+**Mercado de Escanteios:**
+- **Tipo:** Over 9.5 Escanteios
+- **Como funciona:** O jogo deve ter 10 ou mais escanteios no total
+
+### ⚙️ PASSO 2: Configuração Essencial
 ```
 Mercado: Over 9.5 Escanteios
 Faixa de Minutos: De 20 até 75
@@ -66,7 +83,7 @@ Odd Mínima: 1.5
 Filtro de Placar: Qualquer
 ```
 
-### PASSO 3: Condições
+### 🎯 PASSO 3: Condições
 
 **AO VIVO:**
 - Escanteios Totais → Ambos Somados → Mínimo **4** (aos 20-30min)
@@ -84,7 +101,12 @@ Filtro de Placar: Qualquer
 
 ## 🎯 BOT 4: Over 4.5 Cartões
 
-### PASSO 2: Configuração Essencial
+### 📋 PASSO 1: Informações Básicas
+**Mercado de Cartões:**
+- **Tipo:** Over 4.5 Cartões Amarelos
+- **Como funciona:** O jogo deve ter 5 ou mais cartões amarelos no total
+
+### ⚙️ PASSO 2: Configuração Essencial
 ```
 Mercado: Over 4.5 Cartões
 Faixa de Minutos: De 20 até 75
@@ -92,7 +114,7 @@ Odd Mínima: 1.5
 Filtro de Placar: Qualquer
 ```
 
-### PASSO 3: Condições
+### 🎯 PASSO 3: Condições
 
 **AO VIVO:**
 - Cartões Amarelos → Ambos Somados → Mínimo **2**

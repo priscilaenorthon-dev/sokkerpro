@@ -7,7 +7,7 @@
 **Mercado de Gols:**
 - **Tipo:** Sem mais gols até o fim do primeiro tempo
 - **Linha:** Under 0.5 Gols (1T)
-- **Como funciona:** Se o jogo está 0x0 e sair 1 gol você perde, se não sair você ganha. O jogo DEVE terminar o 1T em 0x0.
+- **Como funciona:** Aposta ganha se o primeiro tempo terminar 0x0. Se sair qualquer gol no primeiro tempo (jogo ficar 1x0, 0x1, 1x1, etc.), você perde.
 
 **Nome do Bot:** `Sem Gol 1T` ou `Under 0.5 - 1T`
 

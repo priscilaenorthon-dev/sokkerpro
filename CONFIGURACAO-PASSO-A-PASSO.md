@@ -406,7 +406,7 @@
 **Mercado de Gols:**
 - **Tipo:** Sem mais gols até o fim do primeiro tempo
 - **Linha:** Under 0.5 Gols 1º Tempo (0 gols)
-- **Como funciona:** Não sair gol - se o jogo estiver 0x0 e sair 1 gol você perde, se não sair você ganha
+- **Como funciona:** Aposta ganha se o primeiro tempo terminar 0x0. Se sair qualquer gol no primeiro tempo, você perde.
 
 **Nome do Bot:** `Sem Gol 1T Agressivo`
 

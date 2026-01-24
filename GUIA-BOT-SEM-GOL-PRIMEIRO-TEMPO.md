@@ -2,18 +2,12 @@
 
 ## 📋 Passo 1: Informações Básicas
 
-### Mercado
-**Under 0.5 Gols (Primeiro Tempo)** - NÃO sair gol no primeiro tempo
+**Mercado de Gols:**
+- **Tipo:** Sem mais gols até o fim do primeiro tempo
+- **Linha:** Under 0.5 Gols (1T)
+- **Como funciona:** Aposta ganha se o primeiro tempo terminar 0x0. Se sair qualquer gol no primeiro tempo, você perde.
 
-### Como Funciona
-Este bot identifica jogos ao vivo onde há alta probabilidade de **NÃO sair gol no primeiro tempo**, baseando-se em:
-- Jogos travados com poucas chances criadas
-- Times defensivos que se estudam no 1T
-- Estatísticas ao vivo mostrando jogo fechado
-- Histórico de jogos sem gols no 1T
-
-### Nome do Bot
-`bot-sem-gol-primeiro-tempo`
+**Nome do Bot:** `Sem Gol 1T` ou `Under 0.5 - 1T`
 
 ---
 

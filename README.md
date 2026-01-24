@@ -8,9 +8,14 @@ Este repositório contém configurações otimizadas de bots para a plataforma S
 
 ## ⚡ COMECE AQUI → [CONFIGURAÇÃO PASSO A PASSO](CONFIGURACAO-PASSO-A-PASSO.md)
 
-**📋 Guia completo com instruções detalhadas para configurar cada um dos 14 bots na plataforma SokkerPRO.**
+**📋 Guia completo com instruções detalhadas seguindo o formato oficial do PDF SokkerPRO.**
 
-Este guia contém **configuração passo a passo de todos os 14 bots**, incluindo:
+Este guia contém **configuração passo a passo de todos os 14 bots**, seguindo a estrutura oficial:
+- **Passo 1:** Informações Básicas - Mercado e funcionamento
+- **Passo 2:** Configuração Essencial - Minutos, odds, filtros e gestão de banca
+- **Passo 3:** Condições - Estatísticas AO VIVO e PRÉ-JOGO
+
+Cada bot inclui:
 - ✅ Todas as condições AO VIVO para cada bot
 - ✅ Todas as condições PRÉ-JOGO para cada bot  
 - ✅ Cenários ideais e o que evitar
@@ -27,9 +32,11 @@ Criamos **14 bots especializados** cobrindo os principais mercados do SokkerPRO 
 
 ### 📁 Arquivos Principais
 
-1. **[CONFIGURACAO-PASSO-A-PASSO.md](CONFIGURACAO-PASSO-A-PASSO.md)** - ⭐ **COMECE AQUI!** Configuração detalhada bot por bot
-2. **[GUIA-14-BOTS-ESPECIALIZADOS.md](GUIA-14-BOTS-ESPECIALIZADOS.md)** - Guia completo dos 14 bots com explicações
+1. **[CONFIGURACAO-PASSO-A-PASSO.md](CONFIGURACAO-PASSO-A-PASSO.md)** - ⭐ **COMECE AQUI!** Configuração detalhada bot por bot no formato oficial do PDF
+2. **[GUIA-14-BOTS-ESPECIALIZADOS.md](GUIA-14-BOTS-ESPECIALIZADOS.md)** - Guia completo dos 14 bots com explicações detalhadas
 3. **[REFERENCIA-RAPIDA-14-BOTS.md](REFERENCIA-RAPIDA-14-BOTS.md)** - Tabela resumida e escolha rápida por situação
+
+Todos os guias seguem o formato **Passo 1 → Passo 2 → Passo 3** do PDF oficial SokkerPRO.
 
 ### 🚀 Início Rápido - 14 Bots
 
@@ -62,7 +69,7 @@ Criamos **14 bots especializados** cobrindo os principais mercados do SokkerPRO 
 #### 📁 Arquivos do Bot 1T (COM Gol)
 
 1. **RESPOSTA-CONFIGURACAO.md** - 🇧🇷 Resposta completa em português
-2. **CONFIG-RAPIDA.md** - Referência rápida para copiar e colar no SokkerPRO
+2. **CONFIG-RAPIDA.md** - Referência rápida no formato Passo 1→2→3 do PDF
 3. **GUIA-BOT-GOL-PRIMEIRO-TEMPO.md** - Guia detalhado com explicações e estratégias
 
 ---
@@ -77,7 +84,7 @@ Criamos **14 bots especializados** cobrindo os principais mercados do SokkerPRO 
 #### 📁 Arquivos do Bot 1T (SEM Gol)
 
 1. **RESPOSTA-SEM-GOL.md** - 🇧🇷 Resposta completa em português
-2. **CONFIG-RAPIDA-SEM-GOL.md** - Referência rápida para copiar e colar no SokkerPRO
+2. **CONFIG-RAPIDA-SEM-GOL.md** - Referência rápida no formato Passo 1→2→3 do PDF
 3. **GUIA-BOT-SEM-GOL-PRIMEIRO-TEMPO.md** - Guia detalhado com explicações e estratégias
 
 ---
@@ -92,7 +99,7 @@ Criamos **14 bots especializados** cobrindo os principais mercados do SokkerPRO 
 #### 📁 Arquivos do Bot 2T
 
 1. **RESPOSTA-2T.md** - 🇧🇷 Resposta completa em português
-2. **CONFIG-RAPIDA-2T.md** - Referência rápida para copiar e colar no SokkerPRO
+2. **CONFIG-RAPIDA-2T.md** - Referência rápida no formato Passo 1→2→3 do PDF
 3. **GUIA-BOT-GOL-SEGUNDO-TEMPO.md** - Guia detalhado com explicações e estratégias
 
 ---
@@ -113,8 +120,8 @@ Criamos **14 bots especializados** cobrindo os principais mercados do SokkerPRO 
 
 #### 📁 Arquivos dos 4 Bots Adicionais
 
-1. **GUIA-4-BOTS-ESSENCIAIS.md** - 🇧🇷 Guia completo dos 4 bots
-2. **CONFIG-RAPIDA-4-BOTS.md** - Configurações rápidas para os 4 bots
+1. **GUIA-4-BOTS-ESSENCIAIS.md** - 🇧🇷 Guia completo dos 4 bots no formato Passo 1→2→3
+2. **CONFIG-RAPIDA-4-BOTS.md** - Configurações rápidas seguindo estrutura do PDF
 
 ---
 
@@ -166,7 +173,12 @@ Criamos **14 bots especializados** cobrindo os principais mercados do SokkerPRO 
 
 ## 📚 Documentação Adicional
 
-- **sokkerprobots.pdf** - Documentação oficial dos parâmetros SokkerPRO
+- **sokkerprobots.pdf** - 📄 Documentação oficial dos parâmetros SokkerPRO
+  - Passo 1: Informações Básicas (Mercados)
+  - Passo 2: Configuração Essencial (Minutos, Odds, Filtros)
+  - Passo 3: Condições (AO VIVO e PRÉ-JOGO)
+
+**Todos os arquivos .md deste repositório seguem o formato oficial do PDF.**
 
 ---
 

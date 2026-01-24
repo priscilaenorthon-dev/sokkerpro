@@ -1,0 +1,100 @@
+{
+  "nome": "Bot 07 - Over 2.5 Escanteios Totais - Times Agressivos",
+  "descricao": "Bot para total de escanteios no jogo completo. Busca confrontos entre times muito ofensivos que atacam constantemente pelas laterais.",
+  
+  "passo1_informacoes_basicas": {
+    "mercado": "Total de Escanteios no Jogo",
+    "tipo": "Over 9.5 ou Over 10.5 Escanteios",
+    "objetivo": "Capturar jogos com volume altíssimo de escanteios"
+  },
+  
+  "passo2_configuracao_essencial": {
+    "faixa_minutos": {
+      "de": 12,
+      "ate": 75,
+      "justificativa": "Acompanha todo o jogo para acumular escanteios"
+    },
+    "odd_minima_entrada": 1.70,
+    "valor_entrada": 50,
+    "filtro_placar": "Qualquer",
+    "comentario": "Escanteios continuam acontecendo em qualquer placar"
+  },
+  
+  "passo3_condicoes_ao_vivo": {
+    "aplicar_a": "Ambos Somados",
+    
+    "ataques": {
+      "ataques_perigosos_somados_minimo": 25,
+      "ataques_totais_somados_minimo": 70,
+      "ataques_perigosos_1min_minimo": 2.0,
+      "justificativa": "Altíssima intensidade ofensiva de ambos lados"
+    },
+    
+    "escanteios": {
+      "escanteios_atual_minimo": 4,
+      "escanteios_projecao": "Se está no minuto 20 com 4 escanteios, projeção de 12+ no jogo",
+      "comentario": "Ritmo forte estabelecido"
+    },
+    
+    "chutes": {
+      "chutes_bloqueados_somados_minimo": 5,
+      "total_chutes_somados_minimo": 15,
+      "chutes_fora_area_minimo": 6,
+      "justificativa": "Muitos chutes = muitos escanteios"
+    },
+    
+    "posse_passes": {
+      "total_passes_somados_minimo": 200,
+      "comentario": "Jogo com muito volume de passes e circulação"
+    },
+    
+    "outros": {
+      "laterais_somadas_minimo": 25,
+      "tiro_meta_somados_minimo": 4,
+      "barra_pressao_qualquer_time_minimo": 70,
+      "comentario": "Jogo muito dinâmico e ofensivo"
+    }
+  },
+  
+  "passo3_condicoes_pre_jogo": {
+    "medias_h2h_escanteios": {
+      "media_escanteios_jogo_completo_minimo": 11.0,
+      "media_escanteios_casa_minimo": 5.5,
+      "media_escanteios_visitante_minimo": 5.5,
+      "media_escanteios_1t_minimo": 5.0,
+      "justificativa": "Histórico excepcional de escanteios"
+    },
+    
+    "medias_h2h_ataques": {
+      "media_ataques_perigosos_minimo": 35,
+      "media_ataques_totais_minimo": 80,
+      "comentario": "Times extremamente ofensivos"
+    },
+    
+    "medias_h2h_chutes": {
+      "media_chutes_totais_minimo": 15,
+      "comentario": "Alto volume de finalizações"
+    },
+    
+    "prognosticos": {
+      "prognostico_media_escanteios": "Over 9",
+      "comentario": "Algoritmo SokkerPRO indica muitos escanteios"
+    }
+  },
+  
+  "criterios_entrada": {
+    "momento_ideal": "Minuto 12-25 com pelo menos 4 escanteios já",
+    "odds_alvo": "1.70 a 2.50",
+    "gestao_banca": "3-4% do bankroll",
+    "saida": "Pode fazer cash out se atingir 10 escanteios antes do fim",
+    "projecao": "Calcular ritmo: escanteios/minuto x 90 = projeção total"
+  },
+  
+  "analise_mercado": {
+    "potencial_odds_altas": "Muito Alto - Over 10.5 corners pode ter odds 2.00-3.00",
+    "risco": "Médio - Depende do ritmo se manter",
+    "winrate_estimado": "55-60%",
+    "roi_estimado": "20-30%",
+    "notas": "Um dos mercados com maiores odds quando bem selecionado"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "nome": "Bot 04 - Over 0.5 Gols Asiático 1T - Ataque Equilibrado",
+  "descricao": "Bot que utiliza mercado asiático para reduzir risco. Se sair exatamente 1 gol no 1T, devolve a aposta. Busca jogos equilibrados com potencial ofensivo.",
+  
+  "passo1_informacoes_basicas": {
+    "mercado": "Mais um gol asiático até o fim do primeiro tempo",
+    "tipo": "Over 0.5 Asiático Gols no 1T",
+    "objetivo": "Segurança com devolução se sair apenas 1 gol, vitória se sair 2+"
+  },
+  
+  "passo2_configuracao_essencial": {
+    "faixa_minutos": {
+      "de": 5,
+      "ate": 35,
+      "justificativa": "Entrada mais cedo para aproveitar odds melhores com proteção asiática"
+    },
+    "odd_minima_entrada": 1.70,
+    "valor_entrada": 50,
+    "filtro_placar": "Empate 0x0",
+    "comentario": "Busca jogos balanceados sem gols com ambos times atacando"
+  },
+  
+  "passo3_condicoes_ao_vivo": {
+    "aplicar_a": "Ambos Somados",
+    
+    "ataques": {
+      "ataques_perigosos_somados_minimo": 12,
+      "ataques_perigosos_3min_minimo": 1.0,
+      "ataques_totais_minimo": 40,
+      "justificativa": "Ambos times criando chances"
+    },
+    
+    "chutes": {
+      "chutes_no_gol_somados_minimo": 3,
+      "total_chutes_somados_minimo": 7,
+      "tentativas_gol_minimo": 4,
+      "justificativa": "Finalização de ambos os lados"
+    },
+    
+    "escanteios": {
+      "escanteios_somados_minimo": 3,
+      "comentario": "Escanteios de ambos lados = jogo aberto"
+    },
+    
+    "posse_passes": {
+      "posse_bola_equilibrio": "Entre 45-55% para cada time",
+      "comentario": "Jogo equilibrado aumenta chance de múltiplos gols"
+    },
+    
+    "outros": {
+      "defesas_goleiros_somadas_minimo": 2,
+      "comentario": "Ambos goleiros trabalhando"
+    }
+  },
+  
+  "passo3_condicoes_pre_jogo": {
+    "medias_h2h_gols": {
+      "media_gols_1t_casa_minimo": 0.5,
+      "media_gols_1t_visitante_minimo": 0.5,
+      "media_gols_1t_somada_minimo": 1.2,
+      "justificativa": "Ambos times marcam no 1T regularmente"
+    },
+    
+    "medias_h2h_chutes": {
+      "media_chutes_ao_gol_1t_casa_minimo": 1.5,
+      "media_chutes_ao_gol_1t_visitante_minimo": 1.5,
+      "comentario": "Ambos finalizam"
+    },
+    
+    "prognosticos": {
+      "prognostico_over_05_1t_minimo": 45,
+      "prognostico_over_15_1t_minimo": 25,
+      "prognostico_ambas_marcam_minimo": 40,
+      "comentario": "Boa chance de gols no 1T"
+    }
+  },
+  
+  "criterios_entrada": {
+    "momento_ideal": "5-20 minutos quando ambos times mostram intenção ofensiva",
+    "odds_alvo": "1.70 a 2.30",
+    "gestao_banca": "3-4% do bankroll",
+    "saida": "Aguardar fim 1T - proteção asiática reduz risco",
+    "vantagem": "Se sair 1 gol, recupera aposta; 2+ gols, lucro garantido"
+  },
+  
+  "analise_mercado": {
+    "potencial_odds_altas": "Muito Alto - Asiático 0.5 pode ter odds 1.85-2.40",
+    "risco": "Baixo - Proteção do mercado asiático",
+    "winrate_estimado": "55-60% (vitória) + 15-20% (devolução) = 70-80% não perde",
+    "roi_estimado": "12-18%"
+  }
+}

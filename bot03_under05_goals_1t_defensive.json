@@ -1,0 +1,92 @@
+{
+  "nome": "Bot 03 - Under 0.5 Gols 1T - Favoritos Defensivos",
+  "descricao": "Bot que busca jogos com favoritos jogando defensivamente no primeiro tempo, especialmente quando estão vencendo ou controlando o jogo sem risco.",
+  
+  "passo1_informacoes_basicas": {
+    "mercado": "Sem mais gols até o fim do primeiro tempo",
+    "tipo": "Under 0.5 Gols no 1T (No More Goals)",
+    "objetivo": "Identificar jogos controlados onde não haverá mais gols no 1T"
+  },
+  
+  "passo2_configuracao_essencial": {
+    "faixa_minutos": {
+      "de": 25,
+      "ate": 43,
+      "justificativa": "Entra nos minutos finais do 1T quando padrão está definido"
+    },
+    "odd_minima_entrada": 1.50,
+    "valor_entrada": 50,
+    "filtro_placar": "Favorito Vencendo",
+    "diferenca_gols_favorito": 1,
+    "comentario": "Favorito vencendo por 1 tende a segurar resultado no 1T"
+  },
+  
+  "passo3_condicoes_ao_vivo": {
+    "aplicar_a": "Favorito",
+    
+    "ataques": {
+      "ataques_perigosos_3min_maximo": 0.8,
+      "ataques_perigosos_5min_maximo": 0.7,
+      "justificativa": "Baixa frequência de ataques perigosos indica jogo controlado"
+    },
+    
+    "chutes": {
+      "chutes_no_gol_3min_maximo": 1,
+      "total_chutes_recentes_maximo": 2,
+      "comentario": "Poucas finalizações recentes = baixo risco de gol"
+    },
+    
+    "posse_passes": {
+      "posse_bola_favorito_minimo": 55,
+      "percentual_passes_certos_minimo": 75,
+      "justificativa": "Controle de posse sem arriscar"
+    },
+    
+    "defesa": {
+      "defesas_goleiro_adversario_maximo": 1,
+      "comentario": "Zebra não está finalizando = baixo perigo"
+    },
+    
+    "disciplina": {
+      "faltas_zebra_minimo": 8,
+      "comentario": "Zebra recorrendo a faltas indica dificuldade de criar jogadas"
+    },
+    
+    "outros": {
+      "barra_pressao_zebra_maximo": 40,
+      "comentario": "Zebra com pouca pressão"
+    }
+  },
+  
+  "passo3_condicoes_pre_jogo": {
+    "medias_h2h_gols": {
+      "media_gols_1t_maximo": 1.2,
+      "comentario": "Histórico de poucos gols no 1T"
+    },
+    
+    "medias_h2h_defesa": {
+      "media_desarmes_favorito_minimo": 12,
+      "comentario": "Favorito com boa defesa"
+    },
+    
+    "prognosticos": {
+      "prognostico_favorito_vence_minimo": 65,
+      "prognostico_under_05_1t_minimo": 40,
+      "comentario": "Favorito forte mas jogo de poucos gols"
+    }
+  },
+  
+  "criterios_entrada": {
+    "momento_ideal": "Minutos 28-40 do 1T com favorito vencendo 1x0 e controlando",
+    "odds_alvo": "1.50 a 2.00",
+    "gestao_banca": "3-5% do bankroll (maior confiança)",
+    "saida": "Aguardar fim do 1T"
+  },
+  
+  "analise_mercado": {
+    "potencial_odds_altas": "Alto - Under 0.5 com favorito ganhando pode dar odds 1.70-2.30",
+    "risco": "Baixo - Entrada tardia no 1T reduz risco",
+    "winrate_estimado": "70-75%",
+    "roi_estimado": "20-28%"
+  }
+}

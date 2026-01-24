@@ -1,0 +1,107 @@
+{
+  "nome": "Bot 09 - Vitória Casa - Favoritos Dominantes",
+  "descricao": "Bot para vitória do time da casa quando é grande favorito e está dominando completamente. Busca odds altas em momentos de empate ou desvantagem temporária.",
+  
+  "passo1_informacoes_basicas": {
+    "mercado": "Resultado Final - Vitória Casa",
+    "tipo": "1 (Home Win)",
+    "objetivo": "Capturar vitórias de favoritos em casa com odds valorizadas"
+  },
+  
+  "passo2_configuracao_essencial": {
+    "faixa_minutos": {
+      "de": 1,
+      "ate": 65,
+      "justificativa": "Busca momentos onde favorito ainda não venceu mas domina"
+    },
+    "odd_minima_entrada": 2.00,
+    "valor_entrada": 50,
+    "filtro_placar": "Empate ou Casa Perdendo",
+    "comentario": "Odds altas quando favorito não está vencendo ainda"
+  },
+  
+  "passo3_condicoes_ao_vivo": {
+    "aplicar_a": "Casa",
+    
+    "ataques": {
+      "ataques_perigosos_minimo": 15,
+      "ataques_totais_minimo": 50,
+      "ataques_perigosos_5min_minimo": 1.5,
+      "ataques_perigosos_totais_minimo": 1.2,
+      "justificativa": "Casa dominando completamente o ataque"
+    },
+    
+    "chutes": {
+      "chutes_no_gol_minimo": 5,
+      "total_chutes_minimo": 10,
+      "chutes_dentro_area_minimo": 4,
+      "tentativas_gol_minimo": 6,
+      "justificativa": "Casa criando muitas chances claras"
+    },
+    
+    "escanteios": {
+      "escanteios_casa_minimo": 5,
+      "diferenca_escanteios": "Casa com pelo menos 3 a mais que visitante",
+      "comentario": "Pressão ofensiva constante"
+    },
+    
+    "posse_passes": {
+      "posse_bola_minimo": 60,
+      "percentual_passes_certos_minimo": 75,
+      "total_passes_minimo": 250,
+      "justificativa": "Controle total do jogo"
+    },
+    
+    "defesa": {
+      "defesas_goleiro_adversario_minimo": 4,
+      "desarmes_minimo": 8,
+      "comentario": "Goleiro visitante muito exigido"
+    },
+    
+    "outros": {
+      "barra_pressao_minimo": 80,
+      "comentario": "Dominância quase total"
+    }
+  },
+  
+  "passo3_condicoes_pre_jogo": {
+    "prognosticos": {
+      "prognostico_casa_vence_minimo": 70,
+      "prognostico_casa_ou_empate_minimo": 85,
+      "comentario": "Grande favorito segundo algoritmo SokkerPRO"
+    },
+    
+    "medias_h2h_gols": {
+      "media_gols_casa_minimo": 1.8,
+      "comentario": "Casa marca muito em casa"
+    },
+    
+    "medias_h2h_ataques": {
+      "media_ataques_perigosos_casa_minimo": 25,
+      "comentario": "Padrão ofensivo forte em casa"
+    },
+    
+    "medias_h2h_posse": {
+      "media_posse_bola_casa_minimo": 55,
+      "comentario": "Costuma dominar em casa"
+    }
+  },
+  
+  "criterios_entrada": {
+    "momento_ideal_1": "Minuto 15-30: Empate 0x0 mas casa dominando totalmente",
+    "momento_ideal_2": "Minuto 50-65: Empate 1x1 mas casa com 70%+ pressão",
+    "momento_nao_entrar": "Se casa perdendo por 2+ gols ou sem criar chances",
+    "odds_alvo": "2.00 a 4.00",
+    "gestao_banca": "2-3% do bankroll (risco maior)",
+    "saida": "Aguardar fim ou cash out se casa abrir 2 gols",
+    "logica": "Mercado supervaloriza empate/derrota temporária de favorito dominante"
+  },
+  
+  "analise_mercado": {
+    "potencial_odds_altas": "Altíssimo - Casa pode estar 2.50-4.50 se empatado/perdendo",
+    "risco": "Médio-Alto - Futebol é imprevisível",
+    "winrate_estimado": "50-55%",
+    "roi_estimado": "25-35%",
+    "notas": "Odds muito altas compensam winrate menor. Usar gestão conservadora."
+  }
+}

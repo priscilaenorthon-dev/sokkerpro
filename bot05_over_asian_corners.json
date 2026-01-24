@@ -1,0 +1,90 @@
+{
+  "nome": "Bot 05 - Over 1.5 Escanteios Asiático - Alta Média",
+  "descricao": "Bot focado em escanteios asiáticos. Se der exatamente 8 escanteios, devolve; 9+, vitória. Busca jogos com histórico muito forte de escanteios.",
+  
+  "passo1_informacoes_basicas": {
+    "mercado": "Mais um escanteio asiático até o fim do primeiro tempo",
+    "tipo": "Over Escanteios Asiático",
+    "objetivo": "Proteção em jogos com alta média de escanteios"
+  },
+  
+  "passo2_configuracao_essencial": {
+    "faixa_minutos": {
+      "de": 15,
+      "ate": 42,
+      "justificativa": "Aguarda padrão ofensivo se confirmar"
+    },
+    "odd_minima_entrada": 1.60,
+    "valor_entrada": 50,
+    "filtro_placar": "Qualquer",
+    "comentario": "Escanteios acontecem independente do placar"
+  },
+  
+  "passo3_condicoes_ao_vivo": {
+    "aplicar_a": "Ambos Somados",
+    
+    "ataques": {
+      "ataques_perigosos_somados_minimo": 18,
+      "ataques_totais_somados_minimo": 50,
+      "ataques_perigosos_5min_minimo": 1.5,
+      "justificativa": "Pressão constante gera escanteios"
+    },
+    
+    "escanteios": {
+      "escanteios_atual_minimo": 2,
+      "comentario": "Precisa de ritmo forte de escanteios estabelecido"
+    },
+    
+    "chutes": {
+      "chutes_bloqueados_somados_minimo": 3,
+      "chutes_fora_area_minimo": 4,
+      "total_chutes_somados_minimo": 10,
+      "justificativa": "Chutes bloqueados e de longe viram escanteios"
+    },
+    
+    "laterais": {
+      "laterais_somadas_minimo": 20,
+      "comentario": "Jogo dinâmico com bola nas laterais"
+    },
+    
+    "outros": {
+      "tiro_meta_somados_minimo": 3,
+      "comentario": "Chutes pra fora que viram escanteios"
+    }
+  },
+  
+  "passo3_condicoes_pre_jogo": {
+    "medias_h2h_escanteios": {
+      "media_escanteios_jogo_completo_minimo": 10.5,
+      "media_escanteios_1t_minimo": 4.5,
+      "media_escanteios_casa_minimo": 5,
+      "media_escanteios_visitante_minimo": 5,
+      "justificativa": "Histórico muito forte de escanteios"
+    },
+    
+    "medias_h2h_ataques": {
+      "media_ataques_perigosos_minimo": 30,
+      "comentario": "Times muito ofensivos"
+    },
+    
+    "prognosticos": {
+      "prognostico_media_escanteios": "Over 9",
+      "comentario": "Alta probabilidade de muitos escanteios"
+    }
+  },
+  
+  "criterios_entrada": {
+    "momento_ideal": "15-30 minutos com já 2-3 escanteios e pressão mantida",
+    "odds_alvo": "1.60 a 2.10",
+    "gestao_banca": "4-5% do bankroll",
+    "saida": "Aguardar fim 1T com segurança da proteção asiática",
+    "vantagem": "Devolve se ficar exatamente no limite"
+  },
+  
+  "analise_mercado": {
+    "potencial_odds_altas": "Alto - Asiático em escanteios pode dar 1.75-2.20",
+    "risco": "Baixo - Proteção asiática + mercado previsível",
+    "winrate_estimado": "60-65% + 10-15% devolução",
+    "roi_estimado": "15-22%"
+  }
+}

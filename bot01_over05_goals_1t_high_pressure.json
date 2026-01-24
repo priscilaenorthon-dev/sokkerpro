@@ -1,0 +1,91 @@
+{
+  "nome": "Bot 01 - Over 0.5 Gols 1T - Alta Pressão",
+  "descricao": "Bot focado em jogos com alta pressão ofensiva no primeiro tempo. Busca odds altas em partidas onde times apresentam muitos ataques perigosos e finalizações.",
+  
+  "passo1_informacoes_basicas": {
+    "mercado": "Mais um gol até o fim do primeiro tempo",
+    "tipo": "Over 0.5 Gols no 1T",
+    "objetivo": "Identificar jogos com alta probabilidade de gol no primeiro tempo"
+  },
+  
+  "passo2_configuracao_essencial": {
+    "faixa_minutos": {
+      "de": 8,
+      "ate": 38,
+      "justificativa": "Aguarda início do jogo para avaliar pressão real, encerrando antes do fim do 1T"
+    },
+    "odd_minima_entrada": 1.65,
+    "valor_entrada": 50,
+    "filtro_placar": "Empate 0x0",
+    "comentario": "Busca odds acima de 1.65 em jogos ainda sem gols mas com alta pressão"
+  },
+  
+  "passo3_condicoes_ao_vivo": {
+    "aplicar_a": "Qualquer Time",
+    
+    "ataques": {
+      "ataques_perigosos_minimo": 8,
+      "ataques_perigosos_1min_minimo": 1.5,
+      "ataques_perigosos_3min_minimo": 1.2,
+      "ataques_perigosos_totais_minimo": 0.8,
+      "justificativa": "Times com alta frequência de ataques perigosos têm maior probabilidade de converter em gol"
+    },
+    
+    "chutes": {
+      "chutes_no_gol_minimo": 2,
+      "total_chutes_minimo": 5,
+      "chutes_dentro_area_minimo": 2,
+      "justificativa": "Finalizações no gol indicam real perigo ofensivo"
+    },
+    
+    "escanteios": {
+      "escanteios_minimo": 3,
+      "comentario": "Escanteios indicam pressão constante"
+    },
+    
+    "outros": {
+      "barra_pressao_minimo": 75,
+      "defesas_goleiro_adversario_minimo": 2,
+      "comentario": "Pressão acima de 75% e goleiro trabalhando indicam dominância ofensiva"
+    }
+  },
+  
+  "passo3_condicoes_pre_jogo": {
+    "medias_h2h_gols": {
+      "media_gols_1t_casa_minimo": 0.6,
+      "media_gols_1t_visitante_minimo": 0.6,
+      "media_gols_1t_somada_minimo": 1.0,
+      "justificativa": "Times com histórico de gols no 1T"
+    },
+    
+    "medias_h2h_chutes": {
+      "media_chutes_totais_1t_minimo": 6,
+      "media_chutes_ao_gol_1t_minimo": 2,
+      "comentario": "Histórico de finalizações no primeiro tempo"
+    },
+    
+    "medias_h2h_ataques": {
+      "media_ataques_perigosos_1t_minimo": 15,
+      "comentario": "Times que costumam pressionar no 1T"
+    },
+    
+    "prognosticos": {
+      "prognostico_over_05_1t_minimo": 50,
+      "comentario": "Pelo menos 50% de chance de gol no 1T segundo algoritmo SokkerPRO"
+    }
+  },
+  
+  "criterios_entrada": {
+    "momento_ideal": "Entre 8-20 minutos quando pressão está alta mas odd ainda boa",
+    "odds_alvo": "1.65 a 2.50",
+    "gestao_banca": "2-3% do bankroll por entrada",
+    "saida": "Aguardar fim do primeiro tempo ou cash out se odd cair muito"
+  },
+  
+  "analise_mercado": {
+    "potencial_odds_altas": "Alto - Jogos 0x0 com pressão intensa podem ter odds entre 1.70-2.20",
+    "risco": "Médio - Times podem não converter pressão em gol",
+    "winrate_estimado": "60-65%",
+    "roi_estimado": "15-20%"
+  }
+}

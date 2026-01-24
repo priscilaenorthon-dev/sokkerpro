@@ -1,0 +1,105 @@
+{
+  "nome": "Bot 06 - Sem Mais Gols 1T - Jogos Travados",
+  "descricao": "Bot para jogos muito defensivos ou travados onde não haverá mais gols no primeiro tempo. Ideal para zebras resistindo ou jogos muito táticos.",
+  
+  "passo1_informacoes_basicas": {
+    "mercado": "Sem mais gols até o fim do primeiro tempo",
+    "tipo": "No More Goals 1T",
+    "objetivo": "Identificar jogos onde o placar não mudará até o fim do 1T"
+  },
+  
+  "passo2_configuracao_essencial": {
+    "faixa_minutos": {
+      "de": 20,
+      "ate": 44,
+      "justificativa": "Entrada tardia quando padrão defensivo está confirmado"
+    },
+    "odd_minima_entrada": 1.55,
+    "valor_entrada": 50,
+    "filtro_placar": "Empate 0x0",
+    "comentario": "Jogos empatados sem gols tendem a continuar assim no 1T"
+  },
+  
+  "passo3_condicoes_ao_vivo": {
+    "aplicar_a": "Ambos Somados",
+    
+    "ataques": {
+      "ataques_perigosos_3min_maximo": 1.2,
+      "ataques_perigosos_5min_maximo": 1.0,
+      "ataques_perigosos_totais_maximo": 0.6,
+      "justificativa": "Baixíssima intensidade ofensiva"
+    },
+    
+    "chutes": {
+      "chutes_no_gol_somados_maximo": 2,
+      "total_chutes_recentes_5min_maximo": 2,
+      "chutes_dentro_area_maximo": 1,
+      "justificativa": "Poucas finalizações perigosas"
+    },
+    
+    "escanteios": {
+      "escanteios_somados_maximo": 3,
+      "comentario": "Poucos escanteios = baixa pressão"
+    },
+    
+    "posse_passes": {
+      "percentual_passes_certos_minimo": 70,
+      "comentario": "Jogo controlado, sem risco"
+    },
+    
+    "defesa": {
+      "defesas_goleiro_somadas_maximo": 2,
+      "desarmes_somados_minimo": 15,
+      "justificativa": "Defesas funcionando bem, goleiros pouco exigidos"
+    },
+    
+    "disciplina": {
+      "faltas_somadas_minimo": 12,
+      "impedimentos_somados_minimo": 2,
+      "comentario": "Jogo truncado, muitas paradas"
+    },
+    
+    "outros": {
+      "barra_pressao_maximo": 60,
+      "comentario": "Nenhum time dominando fortemente"
+    }
+  },
+  
+  "passo3_condicoes_pre_jogo": {
+    "medias_h2h_gols": {
+      "media_gols_1t_somada_maximo": 1.0,
+      "comentario": "Histórico de pouquíssimos gols no 1T"
+    },
+    
+    "medias_h2h_chutes": {
+      "media_chutes_ao_gol_1t_maximo": 3,
+      "comentario": "Times não finalizam muito"
+    },
+    
+    "medias_h2h_defesa": {
+      "media_desarmes_minimo": 20,
+      "comentario": "Defesas sólidas"
+    },
+    
+    "prognosticos": {
+      "prognostico_under_05_1t_minimo": 50,
+      "prognostico_ambas_marcam_nao_minimo": 45,
+      "comentario": "Alta probabilidade de jogo sem gols"
+    }
+  },
+  
+  "criterios_entrada": {
+    "momento_ideal": "Minutos 25-40 em jogo 0x0 muito travado",
+    "odds_alvo": "1.55 a 2.20",
+    "gestao_banca": "4-5% do bankroll",
+    "saida": "Aguardar fim do 1T - poucos minutos restantes",
+    "cenario_ideal": "Jogos com zebra se defendendo bem ou clássicos táticos"
+  },
+  
+  "analise_mercado": {
+    "potencial_odds_altas": "Muito Alto - No More Goals 0x0 pode dar 1.80-2.50",
+    "risco": "Médio - Um lance pode mudar tudo, mas entrada tardia mitiga",
+    "winrate_estimado": "65-70%",
+    "roi_estimado": "18-25%"
+  }
+}

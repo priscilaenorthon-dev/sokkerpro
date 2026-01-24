@@ -1,5 +1,8 @@
 # 🎯 CONFIGURAÇÃO PASSO A PASSO - 14 BOTS SOKKERPRO
 
+> **Guia completo seguindo a estrutura oficial do SokkerPRO**  
+> Este documento segue o formato do PDF oficial: **Passo 1** (Informações Básicas), **Passo 2** (Configuração Essencial), **Passo 3** (Condições).
+
 ## 📋 Índice Rápido
 
 - [Bot 01 - Escanteios Conservador (Over 8.5)](#bot-01---escanteios-conservador-over-85)
@@ -21,29 +24,57 @@
 
 ## Bot 01 - Escanteios Conservador (Over 8.5)
 
-### 📌 Configuração Básica
-1. **Nome do Bot:** `Escanteios Conservador`
-2. **Mercado:** `Over 8.5 Escanteios` (9+ corners)
-3. **Odd Mínima:** `1.5`
-4. **Faixa de Entrada:** `25 a 70 minutos`
-5. **Gestão de Banca:** `1-2%`
+### 📋 Passo 1: Informações Básicas
 
-### ✅ Condições AO VIVO (Todas obrigatórias)
+**Mercado de Escanteios:**
+- **Tipo:** Mais um escanteio até o fim do jogo
+- **Linha:** Over 8.5 Escanteios (9+ corners)
+- **Como funciona:** Se o jogo tem 7 escanteios, precisa ter mais 8.5 escanteios, ou seja, 9 ou mais no total
+
+**Nome do Bot:** `Escanteios Conservador`
+
+### ⚙️ Passo 2: Configuração Essencial
+
+**Faixa de Minutos:**
+- **De:** 25
+- **Até:** 70
+- *Por quê?* Tempo suficiente para analisar o padrão do jogo e ainda ter margem para corners acontecerem
+
+**Odd Mínima de Entrada:** 1.5
+- Se não configurar odd, o bot alertará em qualquer odd
+- Com odd 1.5, só alertará quando o mercado estiver nesta cotação ou superior
+
+**Valor de Entrada:** 0 (apenas alertas) ou defina seu valor
+- 0 = Apenas notificações, sem contabilizar lucro/prejuízo
+- [Seu valor] = Contabiliza ROI, lucro e prejuízo automaticamente
+
+**Filtro de Placar:** Qualquer
+- Funciona em qualquer placar
+
+**Gestão de Banca:** 1-2% (Conservador)
+
+### 🎯 Passo 3: Condições
+
+#### ✅ Condições AO VIVO (Todas obrigatórias)
 
 **1. Escanteios**
-- Escanteios Totais: `Mínimo 5`
-- Escanteios últimos 10min: `Mínimo 2`
+- **Escanteios Totais (Ambos Somados):** Mínimo 5
+- **Escanteios últimos 10min (Ambos Somados):** Mínimo 2
 
 **2. Projeção**
-- Cálculo: `(Escanteios atuais ÷ Minuto atual) × 90`
-- Valor Mínimo: `11 escanteios projetados`
+- **Cálculo:** (Escanteios atuais ÷ Minuto atual) × 90
+- **Valor Mínimo:** 11 escanteios projetados
 
 **3. Estatísticas de Ataque**
-- Ataques Perigosos Totais: `Mínimo 12`
-- Chutes Bloqueados: `Mínimo 3`
-- Barra de Pressão: `Mínimo 65%`
+- **Ataques Perigosos Totais (Ambos Somados):** Mínimo 12
+- **Chutes Bloqueados (Ambos Somados):** Mínimo 3
+- **Barra de Pressão (Qualquer Time):** Mínimo 65%
 
-### 📊 Condições PRÉ-JOGO (Todas obrigatórias)
+#### 📊 Condições PRÉ-JOGO (Todas obrigatórias)
+
+> **Sobre as Médias H2H:** Calculadas com base nos últimos 5 jogos:  
+> • Time da casa: últimos 5 jogos em casa  
+> • Time visitante: últimos 5 jogos como visitante
 
 **1. Histórico de Escanteios**
 - Média de Escanteios (últimos 5 jogos): `Mínimo 9.5`
@@ -68,31 +99,59 @@
 
 ## Bot 02 - Escanteios Moderado (Over 10.5)
 
-### 📌 Configuração Básica
-1. **Nome do Bot:** `Escanteios Moderado`
-2. **Mercado:** `Over 10.5 Escanteios` (11+ corners)
-3. **Odd Mínima:** `1.6`
-4. **Faixa de Entrada:** `20 a 65 minutos`
-5. **Gestão de Banca:** `2-3%`
+### 📋 Passo 1: Informações Básicas
 
-### ✅ Condições AO VIVO (Todas obrigatórias)
+**Mercado de Escanteios:**
+- **Tipo:** Mais um escanteio até o fim do jogo
+- **Linha:** Over 10.5 Escanteios (11+ corners)
+- **Como funciona:** Se o jogo tem 8 escanteios, precisa ter mais 10.5 escanteios, ou seja, 11 ou mais no total
+
+**Nome do Bot:** `Escanteios Moderado`
+
+### ⚙️ Passo 2: Configuração Essencial
+
+**Faixa de Minutos:**
+- **De:** 20
+- **Até:** 65
+- *Por quê?* Entrada mais cedo para jogos com ritmo intenso e alto volume de corners desde o início
+
+**Odd Mínima de Entrada:** 1.6
+- Se não configurar odd, o bot alertará em qualquer odd
+- Com odd 1.6, só alertará quando o mercado estiver nesta cotação ou superior
+
+**Valor de Entrada:** 0 (apenas alertas) ou defina seu valor
+- 0 = Apenas notificações, sem contabilizar lucro/prejuízo
+- [Seu valor] = Contabiliza ROI, lucro e prejuízo automaticamente
+
+**Filtro de Placar:** Qualquer
+- Funciona em qualquer placar
+
+**Gestão de Banca:** 2-3% (Moderado)
+
+### 🎯 Passo 3: Condições
+
+#### ✅ Condições AO VIVO (Todas obrigatórias)
 
 **1. Escanteios**
-- Escanteios Totais: `Mínimo 6`
-- Escanteios últimos 10min: `Mínimo 3`
-- Escanteios últimos 5min: `Mínimo 2`
+- **Escanteios Totais (Ambos Somados):** Mínimo 6
+- **Escanteios últimos 10min (Ambos Somados):** Mínimo 3
+- **Escanteios últimos 5min (Ambos Somados):** Mínimo 2
 
 **2. Projeção**
-- Cálculo: `(Escanteios atuais ÷ Minuto atual) × 90`
-- Valor Mínimo: `13 escanteios projetados`
+- **Cálculo:** (Escanteios atuais ÷ Minuto atual) × 90
+- **Valor Mínimo:** 13 escanteios projetados
 
 **3. Estatísticas de Ataque**
-- Ataques Perigosos Totais: `Mínimo 15`
-- Chutes Bloqueados: `Mínimo 4`
-- Chutes Totais: `Mínimo 12`
-- Barra de Pressão: `Mínimo 70%`
+- **Ataques Perigosos Totais (Ambos Somados):** Mínimo 15
+- **Chutes Bloqueados (Ambos Somados):** Mínimo 4
+- **Chutes Totais (Ambos Somados):** Mínimo 12
+- **Barra de Pressão (Qualquer Time):** Mínimo 70%
 
-### 📊 Condições PRÉ-JOGO (Todas obrigatórias)
+#### 📊 Condições PRÉ-JOGO (Todas obrigatórias)
+
+> **Sobre as Médias H2H:** Calculadas com base nos últimos 5 jogos:  
+> • Time da casa: últimos 5 jogos em casa  
+> • Time visitante: últimos 5 jogos como visitante
 
 **1. Histórico de Escanteios**
 - Média de Escanteios (últimos 5 jogos): `Mínimo 11`
@@ -116,32 +175,60 @@
 
 ## Bot 03 - Escanteios Agressivo (Under 7.5)
 
-### 📌 Configuração Básica
-1. **Nome do Bot:** `Escanteios Agressivo Under`
-2. **Mercado:** `Under 7.5 Escanteios` (máximo 7 corners)
-3. **Odd Mínima:** `1.5`
-4. **Faixa de Entrada:** `30 a 70 minutos`
-5. **Gestão de Banca:** `2-4%`
+### 📋 Passo 1: Informações Básicas
 
-### ✅ Condições AO VIVO (Todas obrigatórias - MÁXIMOS)
+**Mercado de Escanteios:**
+- **Tipo:** Sem mais escanteios até o fim do jogo
+- **Linha:** Under 7.5 Escanteios (máximo 7 corners)
+- **Como funciona:** O jogo não pode ter mais de 7 escanteios no total
+
+**Nome do Bot:** `Escanteios Agressivo Under`
+
+### ⚙️ Passo 2: Configuração Essencial
+
+**Faixa de Minutos:**
+- **De:** 30
+- **Até:** 70
+- *Por quê?* Tempo suficiente para confirmar o padrão de jogo travado com poucos corners
+
+**Odd Mínima de Entrada:** 1.5
+- Se não configurar odd, o bot alertará em qualquer odd
+- Com odd 1.5, só alertará quando o mercado estiver nesta cotação ou superior
+
+**Valor de Entrada:** 0 (apenas alertas) ou defina seu valor
+- 0 = Apenas notificações, sem contabilizar lucro/prejuízo
+- [Seu valor] = Contabiliza ROI, lucro e prejuízo automaticamente
+
+**Filtro de Placar:** Qualquer
+- Funciona em qualquer placar
+
+**Gestão de Banca:** 2-4% (Agressivo)
+
+### 🎯 Passo 3: Condições
+
+#### ✅ Condições AO VIVO (Todas obrigatórias - MÁXIMOS)
 
 **1. Escanteios**
-- Escanteios Totais: `MÁXIMO 3`
-- Escanteios últimos 10min: `MÁXIMO 1`
+- **Escanteios Totais (Ambos Somados):** MÁXIMO 3
+- **Escanteios últimos 10min (Ambos Somados):** MÁXIMO 1
 
 **2. Projeção**
-- Cálculo: `(Escanteios atuais ÷ Minuto atual) × 90`
-- Valor Máximo: `7 escanteios projetados`
+- **Cálculo:** (Escanteios atuais ÷ Minuto atual) × 90
+- **Valor Máximo:** 7 escanteios projetados
 
 **3. Estatísticas de Ataque**
-- Ataques Perigosos Totais: `MÁXIMO 8`
-- Chutes Bloqueados: `MÁXIMO 2`
-- Diferença de Posse: `MÁXIMO 15%` (jogo equilibrado)
+- **Ataques Perigosos Totais (Ambos Somados):** MÁXIMO 8
+- **Chutes Bloqueados (Ambos Somados):** MÁXIMO 2
+- **Diferença de Posse:** MÁXIMO 15% (jogo equilibrado)
 
-### 📊 Condições PRÉ-JOGO (Todas obrigatórias)
+#### 📊 Condições PRÉ-JOGO (Todas obrigatórias)
+
+> **Sobre as Médias H2H:** Calculadas com base nos últimos 5 jogos:  
+> • Time da casa: últimos 5 jogos em casa  
+> • Time visitante: últimos 5 jogos como visitante
 
 **1. Histórico de Escanteios**
-- Média de Escanteios: `MÁXIMO 8`
+- Média de Escanteios (últimos 5 jogos): `MÁXIMO 8`
 - Ambos times com média baixa
 
 **2. Estilo de Jogo**
@@ -164,31 +251,58 @@
 
 ## Bot 04 - Gol 1T Conservador (Over 0.5)
 
-### 📌 Configuração Básica
-1. **Nome do Bot:** `Gol 1T Conservador`
-2. **Mercado:** `Over 0.5 Gols 1º Tempo`
-3. **Odd Mínima:** `1.4`
-4. **Faixa de Entrada:** `15 a 35 minutos`
-5. **Filtro de Placar:** `0x0` (OBRIGATÓRIO)
-6. **Gestão de Banca:** `1-2%`
+### 📋 Passo 1: Informações Básicas
 
-### ✅ Condições AO VIVO (Todas obrigatórias)
+**Mercado de Gols:**
+- **Tipo:** Mais um gol até o fim do primeiro tempo
+- **Linha:** Over 0.5 Gols 1º Tempo
+- **Como funciona:** Sair mais um gol no jogo, exemplo: jogo 0x0 seria mais de 0.5
+
+**Nome do Bot:** `Gol 1T Conservador`
+
+### ⚙️ Passo 2: Configuração Essencial
+
+**Faixa de Minutos:**
+- **De:** 15
+- **Até:** 35
+- *Por quê?* Janela ideal no 1º tempo com tempo suficiente para sair pelo menos 1 gol
+
+**Odd Mínima de Entrada:** 1.4
+- Se não configurar odd, o bot alertará em qualquer odd
+- Com odd 1.4, só alertará quando o mercado estiver nesta cotação ou superior
+
+**Valor de Entrada:** 0 (apenas alertas) ou defina seu valor
+- 0 = Apenas notificações, sem contabilizar lucro/prejuízo
+- [Seu valor] = Contabiliza ROI, lucro e prejuízo automaticamente
+
+**Filtro de Placar:** 0x0 (OBRIGATÓRIO)
+- Só funciona com jogo sem gols
+
+**Gestão de Banca:** 1-2% (Conservador)
+
+### 🎯 Passo 3: Condições
+
+#### ✅ Condições AO VIVO (Todas obrigatórias)
 
 **1. Estatísticas de Ataque**
-- Ataques Perigosos Totais: `Mínimo 6`
-- Grandes Chances Criadas: `Mínimo 2`
-- Chutes no Gol: `Mínimo 3`
-- Chutes na Área: `Mínimo 4`
+- **Ataques Perigosos Totais (Ambos Somados):** Mínimo 6
+- **Grandes Chances Criadas (Ambos Somados):** Mínimo 2
+- **Chutes no Gol (Ambos Somados):** Mínimo 3
+- **Chutes na Área (Ambos Somados):** Mínimo 4
 
 **2. Pressão Ofensiva**
-- Barra de Pressão: `Mínimo 60%`
-- Ataques nos últimos 5min: `Mínimo 3`
+- **Barra de Pressão (Qualquer Time):** Mínimo 60%
+- **Ataques nos últimos 5min (Ambos Somados):** Mínimo 3
 
 **3. Finalizações**
-- Total de Chutes: `Mínimo 6`
-- Defesas do Goleiro: `Mínimo 2`
+- **Total de Chutes (Ambos Somados):** Mínimo 6
+- **Defesas do Goleiro (Ambos Somados):** Mínimo 2
 
-### 📊 Condições PRÉ-JOGO (Todas obrigatórias)
+#### 📊 Condições PRÉ-JOGO (Todas obrigatórias)
+
+> **Sobre as Médias H2H:** Calculadas com base nos últimos 5 jogos:  
+> • Time da casa: últimos 5 jogos em casa  
+> • Time visitante: últimos 5 jogos como visitante
 
 **1. Histórico de Gols**
 - Média de Gols 1T (últimos 5 jogos): `Mínimo 1.2`
@@ -212,33 +326,60 @@
 
 ## Bot 05 - Gol 1T Moderado (Over 1.5)
 
-### 📌 Configuração Básica
-1. **Nome do Bot:** `Gol 1T Moderado`
-2. **Mercado:** `Over 1.5 Gols 1º Tempo` (2+ gols)
-3. **Odd Mínima:** `1.8`
-4. **Faixa de Entrada:** `15 a 40 minutos`
-5. **Filtro de Placar:** `1 gol já marcado` (1x0 ou 0x1)
-6. **Gestão de Banca:** `2-3%`
+### 📋 Passo 1: Informações Básicas
 
-### ✅ Condições AO VIVO (Todas obrigatórias)
+**Mercado de Gols:**
+- **Tipo:** Mais um gol até o fim do primeiro tempo
+- **Linha:** Over 1.5 Gols 1º Tempo (2+ gols)
+- **Como funciona:** Se já tem 1 gol, precisa sair mais 1 para completar 2+ gols no 1T
+
+**Nome do Bot:** `Gol 1T Moderado`
+
+### ⚙️ Passo 2: Configuração Essencial
+
+**Faixa de Minutos:**
+- **De:** 15
+- **Até:** 40
+- *Por quê?* Tempo adequado para jogos com ritmo intenso onde já saiu 1 gol
+
+**Odd Mínima de Entrada:** 1.8
+- Se não configurar odd, o bot alertará em qualquer odd
+- Com odd 1.8, só alertará quando o mercado estiver nesta cotação ou superior
+
+**Valor de Entrada:** 0 (apenas alertas) ou defina seu valor
+- 0 = Apenas notificações, sem contabilizar lucro/prejuízo
+- [Seu valor] = Contabiliza ROI, lucro e prejuízo automaticamente
+
+**Filtro de Placar:** 1 gol já marcado (1x0 ou 0x1)
+- Requer pelo menos 1 gol marcado
+
+**Gestão de Banca:** 2-3% (Moderado)
+
+### 🎯 Passo 3: Condições
+
+#### ✅ Condições AO VIVO (Todas obrigatórias)
 
 **1. Gols e Ritmo**
-- Gols marcados no 1T: `Mínimo 1`
-- Tempo desde último gol: `Máximo 8 minutos`
+- **Gols marcados no 1T:** Mínimo 1
+- **Tempo desde último gol:** Máximo 8 minutos
 
 **2. Estatísticas de Ataque**
-- Ataques Perigosos Totais: `Mínimo 10`
-- Grandes Chances Criadas: `Mínimo 3`
-- Chutes no Gol: `Mínimo 5`
+- **Ataques Perigosos Totais (Ambos Somados):** Mínimo 10
+- **Grandes Chances Criadas (Ambos Somados):** Mínimo 3
+- **Chutes no Gol (Ambos Somados):** Mínimo 5
 
 **3. Pressão Ofensiva**
-- Barra de Pressão: `Mínimo 65%`
+- **Barra de Pressão (Qualquer Time):** Mínimo 65%
 - Ambos times atacando ativamente
 
-### 📊 Condições PRÉ-JOGO (Todas obrigatórias)
+#### 📊 Condições PRÉ-JOGO (Todas obrigatórias)
+
+> **Sobre as Médias H2H:** Calculadas com base nos últimos 5 jogos:  
+> • Time da casa: últimos 5 jogos em casa  
+> • Time visitante: últimos 5 jogos como visitante
 
 **1. Histórico de Gols**
-- Média de Gols 1T: `Mínimo 1.8`
+- Média de Gols 1T (últimos 5 jogos): `Mínimo 1.8`
 - Histórico de jogos com 2+ gols no 1T: `Mínimo 40%`
 
 **2. Características**
@@ -260,33 +401,60 @@
 
 ## Bot 06 - Sem Gol 1T Agressivo (Under 0.5)
 
-### 📌 Configuração Básica
-1. **Nome do Bot:** `Sem Gol 1T Agressivo`
-2. **Mercado:** `Under 0.5 Gols 1º Tempo` (0 gols)
-3. **Odd Mínima:** `1.5`
-4. **Faixa de Entrada:** `20 a 40 minutos`
-5. **Filtro de Placar:** `0x0` (OBRIGATÓRIO - se sair gol, aposta perdida)
-6. **Gestão de Banca:** `2-4%`
+### 📋 Passo 1: Informações Básicas
 
-### ✅ Condições AO VIVO (Todas obrigatórias - MÁXIMOS)
+**Mercado de Gols:**
+- **Tipo:** Sem mais gols até o fim do primeiro tempo
+- **Linha:** Under 0.5 Gols 1º Tempo (0 gols)
+- **Como funciona:** Não sair gol - se o jogo estiver 0x0 e sair 1 gol você perde, se não sair você ganha
+
+**Nome do Bot:** `Sem Gol 1T Agressivo`
+
+### ⚙️ Passo 2: Configuração Essencial
+
+**Faixa de Minutos:**
+- **De:** 20
+- **Até:** 40
+- *Por quê?* Tempo adequado para confirmar padrão de jogo travado sem muitas chances
+
+**Odd Mínima de Entrada:** 1.5
+- Se não configurar odd, o bot alertará em qualquer odd
+- Com odd 1.5, só alertará quando o mercado estiver nesta cotação ou superior
+
+**Valor de Entrada:** 0 (apenas alertas) ou defina seu valor
+- 0 = Apenas notificações, sem contabilizar lucro/prejuízo
+- [Seu valor] = Contabiliza ROI, lucro e prejuízo automaticamente
+
+**Filtro de Placar:** 0x0 (OBRIGATÓRIO - se sair gol, aposta perdida)
+- Só funciona com jogo sem gols
+
+**Gestão de Banca:** 2-4% (Agressivo)
+
+### 🎯 Passo 3: Condições
+
+#### ✅ Condições AO VIVO (Todas obrigatórias - MÁXIMOS)
 
 **1. Estatísticas de Ataque**
-- Ataques Perigosos Totais: `MÁXIMO 4`
-- Grandes Chances Criadas: `MÁXIMO 0`
-- Chutes no Gol: `MÁXIMO 1`
+- **Ataques Perigosos Totais (Ambos Somados):** MÁXIMO 4
+- **Grandes Chances Criadas (Ambos Somados):** MÁXIMO 0
+- **Chutes no Gol (Ambos Somados):** MÁXIMO 1
 
 **2. Pressão Ofensiva**
-- Barra de Pressão: `MÁXIMO 50%` (equilibrado)
-- Total de Chutes: `MÁXIMO 4`
+- **Barra de Pressão (Qualquer Time):** MÁXIMO 50% (equilibrado)
+- **Total de Chutes (Ambos Somados):** MÁXIMO 4
 
 **3. Ritmo de Jogo**
-- Faltas: `Mínimo 8` (jogo travado)
-- Escanteios: `MÁXIMO 3`
+- **Faltas (Ambos Somados):** Mínimo 8 (jogo travado)
+- **Escanteios (Ambos Somados):** MÁXIMO 3
 
-### 📊 Condições PRÉ-JOGO (Todas obrigatórias)
+#### 📊 Condições PRÉ-JOGO (Todas obrigatórias)
+
+> **Sobre as Médias H2H:** Calculadas com base nos últimos 5 jogos:  
+> • Time da casa: últimos 5 jogos em casa  
+> • Time visitante: últimos 5 jogos como visitante
 
 **1. Histórico de Gols**
-- Média de Gols 1T: `MÁXIMO 0.6`
+- Média de Gols 1T (últimos 5 jogos): `MÁXIMO 0.6`
 - Histórico de 0x0 no 1T: `Mínimo 50%`
 
 **2. Prognóstico**
@@ -312,31 +480,57 @@
 
 ## Bot 07 - Empate Conservador
 
-### 📌 Configuração Básica
-1. **Nome do Bot:** `Empate Conservador`
-2. **Mercado:** `Empate (Draw)`
-3. **Odd Mínima:** `2.0`
-4. **Faixa de Entrada:** `60 a 80 minutos`
-5. **Filtro de Placar:** `Empate OU diferença de 1 gol`
-6. **Gestão de Banca:** `1-2%`
+### 📋 Passo 1: Informações Básicas
 
-### ✅ Condições AO VIVO (Todas obrigatórias)
+**Mercado de Resultado:**
+- **Tipo:** Empate (Draw)
+- **Como funciona:** O jogo deve terminar empatado em qualquer placar
+
+**Nome do Bot:** `Empate Conservador`
+
+### ⚙️ Passo 2: Configuração Essencial
+
+**Faixa de Minutos:**
+- **De:** 60
+- **Até:** 80
+- *Por quê?* Fase final do jogo onde o padrão de equilíbrio está consolidado
+
+**Odd Mínima de Entrada:** 2.0
+- Se não configurar odd, o bot alertará em qualquer odd
+- Com odd 2.0, só alertará quando o mercado estiver nesta cotação ou superior
+
+**Valor de Entrada:** 0 (apenas alertas) ou defina seu valor
+- 0 = Apenas notificações, sem contabilizar lucro/prejuízo
+- [Seu valor] = Contabiliza ROI, lucro e prejuízo automaticamente
+
+**Filtro de Placar:** Empate OU diferença de 1 gol
+- Empate em qualquer placar ou diferença de apenas 1 gol
+
+**Gestão de Banca:** 1-2% (Conservador)
+
+### 🎯 Passo 3: Condições
+
+#### ✅ Condições AO VIVO (Todas obrigatórias)
 
 **1. Placar**
-- Situação: `0x0, 1x1, 2x2 OU 1x0, 0x1`
+- **Situação:** 0x0, 1x1, 2x2 OU 1x0, 0x1
 - Se diferença de 1 gol: Time perdendo deve estar pressionando
 
 **2. Equilíbrio do Jogo**
-- Posse de Bola: `Entre 45% e 55%` (muito equilibrado)
-- Diferença de Ataques Perigosos: `MÁXIMO 3`
-- Diferença de Chutes: `MÁXIMO 4`
+- **Posse de Bola:** Entre 45% e 55% (muito equilibrado)
+- **Diferença de Ataques Perigosos:** MÁXIMO 3
+- **Diferença de Chutes:** MÁXIMO 4
 
 **3. Estatísticas Balanceadas**
-- Barra de Pressão: `Entre 45% e 55%`
+- **Barra de Pressão:** Entre 45% e 55%
 - Escanteios de ambos: Próximos
 - Chutes no gol: Próximos
 
-### 📊 Condições PRÉ-JOGO (Todas obrigatórias)
+#### 📊 Condições PRÉ-JOGO (Todas obrigatórias)
+
+> **Sobre as Médias H2H:** Calculadas com base nos últimos 5 jogos:  
+> • Time da casa: últimos 5 jogos em casa  
+> • Time visitante: últimos 5 jogos como visitante
 
 **1. Histórico H2H**
 - Empates nos últimos 5 confrontos: `Mínimo 2`
@@ -361,24 +555,46 @@
 
 ## Bot 08 - Empate Moderado (Tático)
 
-### 📌 Configuração Básica
-1. **Nome do Bot:** `Empate Tático`
-2. **Mercado:** `Empate (Draw)`
-3. **Odd Mínima:** `2.2`
-4. **Faixa de Entrada:** `50 a 75 minutos`
-5. **Filtro de Placar:** `Empate ou 1x0/0x1`
-6. **Gestão de Banca:** `2-3%`
+### 📋 Passo 1: Informações Básicas
 
-### ✅ Condições AO VIVO (Todas obrigatórias)
+**Mercado de Resultado:**
+- **Tipo:** Empate (Draw)
+- **Como funciona:** O jogo deve terminar empatado em qualquer placar
+
+**Nome do Bot:** `Empate Tático`
+
+### ⚙️ Passo 2: Configuração Essencial
+
+**Faixa de Minutos:**
+- **De:** 50
+- **Até:** 75
+- *Por quê?* Jogos decisivos tendem a ficar mais travados nesta fase
+
+**Odd Mínima de Entrada:** 2.2
+- Se não configurar odd, o bot alertará em qualquer odd
+- Com odd 2.2, só alertará quando o mercado estiver nesta cotação ou superior
+
+**Valor de Entrada:** 0 (apenas alertas) ou defina seu valor
+- 0 = Apenas notificações, sem contabilizar lucro/prejuízo
+- [Seu valor] = Contabiliza ROI, lucro e prejuízo automaticamente
+
+**Filtro de Placar:** Empate ou 1x0/0x1
+- Empate ou diferença mínima de gols
+
+**Gestão de Banca:** 2-3% (Moderado)
+
+### 🎯 Passo 3: Condições
+
+#### ✅ Condições AO VIVO (Todas obrigatórias)
 
 **1. Tipo de Jogo**
-- Faltas: `Mínimo 12` (jogo travado)
-- Cartões Amarelos: `Mínimo 2`
+- **Faltas (Ambos Somados):** Mínimo 12 (jogo travado)
+- **Cartões Amarelos (Ambos Somados):** Mínimo 2
 - Ritmo de jogo: Lento/estudado
 
 **2. Características Táticas**
-- Posse de Bola: `Entre 40% e 60%`
-- Ataques Perigosos: `MÁXIMO 10` (jogo fechado)
+- **Posse de Bola:** Entre 40% e 60%
+- **Ataques Perigosos (Ambos Somados):** MÁXIMO 10 (jogo fechado)
 - Muitas faltas táticas
 
 **3. Contexto**
@@ -386,7 +602,11 @@
 - Ambos times com medo de perder
 - Jogo físico/pegado
 
-### 📊 Condições PRÉ-JOGO (Todas obrigatórias)
+#### 📊 Condições PRÉ-JOGO (Todas obrigatórias)
+
+> **Sobre as Médias H2H:** Calculadas com base nos últimos 5 jogos:  
+> • Time da casa: últimos 5 jogos em casa  
+> • Time visitante: últimos 5 jogos como visitante
 
 **1. Importância do Jogo**
 - Tipo: `Final, Derby, Jogo Decisivo`
@@ -411,15 +631,37 @@
 
 ## Bot 09 - Empate Agressivo (Zebra)
 
-### 📌 Configuração Básica
-1. **Nome do Bot:** `Empate Zebra`
-2. **Mercado:** `Empate (Draw)`
-3. **Odd Mínima:** `2.5`
-4. **Faixa de Entrada:** `45 a 70 minutos`
-5. **Filtro de Placar:** `Visitante ganhando OU empate com favorito pressionando`
-6. **Gestão de Banca:** `3-5%`
+### 📋 Passo 1: Informações Básicas
 
-### ✅ Condições AO VIVO (Todas obrigatórias)
+**Mercado de Resultado:**
+- **Tipo:** Empate (Draw)
+- **Como funciona:** O jogo deve terminar empatado em qualquer placar
+
+**Nome do Bot:** `Empate Zebra`
+
+### ⚙️ Passo 2: Configuração Essencial
+
+**Faixa de Minutos:**
+- **De:** 45
+- **Até:** 70
+- *Por quê?* Janela onde o favorito tem tempo de empatar mas já está sob pressão
+
+**Odd Mínima de Entrada:** 2.5
+- Se não configurar odd, o bot alertará em qualquer odd
+- Com odd 2.5, só alertará quando o mercado estiver nesta cotação ou superior
+
+**Valor de Entrada:** 0 (apenas alertas) ou defina seu valor
+- 0 = Apenas notificações, sem contabilizar lucro/prejuízo
+- [Seu valor] = Contabiliza ROI, lucro e prejuízo automaticamente
+
+**Filtro de Placar:** Visitante ganhando OU empate com favorito pressionando
+- Situação de zebra ou favorito em dificuldade
+
+**Gestão de Banca:** 3-5% (Agressivo)
+
+### 🎯 Passo 3: Condições
+
+#### ✅ Condições AO VIVO (Todas obrigatórias)
 
 **1. Situação do Placar**
 - Opção A: Visitante vencendo por 1 gol
@@ -427,19 +669,23 @@
 
 **2. Desempenho do Favorito**
 - Favorito está pressionando mas não converte
-- Posse do Favorito: `Mínimo 55%`
-- Ataques Perigosos Favorito: `Mínimo 8`
+- **Posse do Favorito:** Mínimo 55%
+- **Ataques Perigosos Favorito:** Mínimo 8
 
 **3. Defesa do Visitante**
 - Visitante organizado defensivamente
-- Defesas do goleiro visitante: `Mínimo 4`
-- Chutes bloqueados visitante: `Mínimo 3`
+- **Defesas do goleiro visitante:** Mínimo 4
+- **Chutes bloqueados visitante:** Mínimo 3
 
 **4. Contexto**
 - Favorito precisa empatar/virar
 - Pressão aumentando no favorito
 
-### 📊 Condições PRÉ-JOGO (Todas obrigatórias)
+#### 📊 Condições PRÉ-JOGO (Todas obrigatórias)
+
+> **Sobre as Médias H2H:** Calculadas com base nos últimos 5 jogos:  
+> • Time da casa: últimos 5 jogos em casa  
+> • Time visitante: últimos 5 jogos como visitante
 
 **1. Odds**
 - Odd do Favorito: `MÁXIMO 1.60` (grande favorito)
@@ -464,38 +710,65 @@
 
 ## Bot 10 - Gol 2T Conservador (Over 0.5)
 
-### 📌 Configuração Básica
-1. **Nome do Bot:** `Gol 2T Conservador`
-2. **Mercado:** `Over 0.5 Gols 2º Tempo`
-3. **Odd Mínima:** `1.4`
-4. **Faixa de Entrada:** `50 a 75 minutos`
-5. **Filtro de Placar:** `Qualquer (mas um time precisa de gol)`
-6. **Gestão de Banca:** `1-2%`
+### 📋 Passo 1: Informações Básicas
 
-### ✅ Condições AO VIVO (Todas obrigatórias)
+**Mercado de Gols:**
+- **Tipo:** Mais um gol até o fim do segundo tempo
+- **Linha:** Over 0.5 Gols 2º Tempo
+- **Como funciona:** Sair pelo menos 1 gol no segundo tempo
+
+**Nome do Bot:** `Gol 2T Conservador`
+
+### ⚙️ Passo 2: Configuração Essencial
+
+**Faixa de Minutos:**
+- **De:** 50
+- **Até:** 75
+- *Por quê?* Tempo adequado no 2T para time que precisa de gol reagir
+
+**Odd Mínima de Entrada:** 1.4
+- Se não configurar odd, o bot alertará em qualquer odd
+- Com odd 1.4, só alertará quando o mercado estiver nesta cotação ou superior
+
+**Valor de Entrada:** 0 (apenas alertas) ou defina seu valor
+- 0 = Apenas notificações, sem contabilizar lucro/prejuízo
+- [Seu valor] = Contabiliza ROI, lucro e prejuízo automaticamente
+
+**Filtro de Placar:** Qualquer (mas um time precisa de gol)
+- Situações onde há motivação para atacar
+
+**Gestão de Banca:** 1-2% (Conservador)
+
+### 🎯 Passo 3: Condições
+
+#### ✅ Condições AO VIVO (Todas obrigatórias)
 
 **1. Situação do Jogo**
 - Um time precisa urgentemente de gol
 - Opções: Empate insuficiente, time perdendo, etc.
 
 **2. Estatísticas do 2T**
-- Ataques Perigosos no 2T: `Mínimo 4`
-- Chutes no 2T: `Mínimo 3`
-- Tempo de jogo no 2T: `Mínimo 5 minutos`
+- **Ataques Perigosos no 2T (Ambos Somados):** Mínimo 4
+- **Chutes no 2T (Ambos Somados):** Mínimo 3
+- **Tempo de jogo no 2T:** Mínimo 5 minutos
 
 **3. Mudanças Táticas**
-- Substituições ofensivas feitas: `Mínimo 1`
+- **Substituições ofensivas feitas:** Mínimo 1
 - Entrada de atacantes
 - Mudança de formação para atacar
 
 **4. Pressão Ofensiva**
-- Barra de Pressão: `Mínimo 60%`
+- **Barra de Pressão (Qualquer Time):** Mínimo 60%
 - Time que precisa do gol atacando
 
-### 📊 Condições PRÉ-JOGO (Todas obrigatórias)
+#### 📊 Condições PRÉ-JOGO (Todas obrigatórias)
+
+> **Sobre as Médias H2H:** Calculadas com base nos últimos 5 jogos:  
+> • Time da casa: últimos 5 jogos em casa  
+> • Time visitante: últimos 5 jogos como visitante
 
 **1. Histórico**
-- Média de Gols totais: `Mínimo 2.0`
+- Média de Gols totais (últimos 5 jogos): `Mínimo 2.0`
 - Times costumam marcar no 2T
 
 **2. Características**
@@ -516,24 +789,47 @@
 
 ## Bot 11 - Gol 2T Agressivo (Over 1.5)
 
-### 📌 Configuração Básica
-1. **Nome do Bot:** `Gol 2T Agressivo`
-2. **Mercado:** `Over 1.5 Gols 2º Tempo` (2+ gols)
-3. **Odd Mínima:** `2.0`
-4. **Faixa de Entrada:** `50 a 70 minutos`
-5. **Filtro de Placar:** `Mínimo 1 gol no 2T já marcado`
-6. **Gestão de Banca:** `3-4%`
+### 📋 Passo 1: Informações Básicas
 
-### ✅ Condições AO VIVO (Todas obrigatórias)
+**Mercado de Gols:**
+- **Tipo:** Mais um gol até o fim do segundo tempo
+- **Linha:** Over 1.5 Gols 2º Tempo (2+ gols)
+- **Como funciona:** Sair pelo menos 2 gols no segundo tempo
+
+**Nome do Bot:** `Gol 2T Agressivo`
+
+### ⚙️ Passo 2: Configuração Essencial
+
+**Faixa de Minutos:**
+- **De:** 50
+- **Até:** 70
+- *Por quê?* Tempo suficiente para múltiplos gols com jogo aberto
+
+**Odd Mínima de Entrada:** 2.0
+- Se não configurar odd, o bot alertará em qualquer odd
+- Com odd 2.0, só alertará quando o mercado estiver nesta cotação ou superior
+
+**Valor de Entrada:** 0 (apenas alertas) ou defina seu valor
+- 0 = Apenas notificações, sem contabilizar lucro/prejuízo
+- [Seu valor] = Contabiliza ROI, lucro e prejuízo automaticamente
+
+**Filtro de Placar:** Mínimo 1 gol no 2T já marcado
+- Requer pelo menos 1 gol no segundo tempo
+
+**Gestão de Banca:** 3-4% (Agressivo)
+
+### 🎯 Passo 3: Condições
+
+#### ✅ Condições AO VIVO (Todas obrigatórias)
 
 **1. Gols no 2T**
-- Gols marcados no 2T: `Mínimo 1`
-- Tempo desde último gol: `MÁXIMO 5 minutos`
+- **Gols marcados no 2T:** Mínimo 1
+- **Tempo desde último gol:** MÁXIMO 5 minutos
 
 **2. Estatísticas do 2T**
-- Ataques Perigosos no 2T: `Mínimo 10`
-- Chutes no Gol no 2T: `Mínimo 4`
-- Grandes Chances no 2T: `Mínimo 2`
+- **Ataques Perigosos no 2T (Ambos Somados):** Mínimo 10
+- **Chutes no Gol no 2T (Ambos Somados):** Mínimo 4
+- **Grandes Chances no 2T (Ambos Somados):** Mínimo 2
 
 **3. Ritmo de Jogo**
 - Jogo muito aberto
@@ -541,13 +837,17 @@
 - Espaços aparecendo
 
 **4. Pressão**
-- Barra de Pressão: `Mínimo 65%`
+- **Barra de Pressão (Qualquer Time):** Mínimo 65%
 - Jogo em alta intensidade
 
-### 📊 Condições PRÉ-JOGO (Todas obrigatórias)
+#### 📊 Condições PRÉ-JOGO (Todas obrigatórias)
+
+> **Sobre as Médias H2H:** Calculadas com base nos últimos 5 jogos:  
+> • Time da casa: últimos 5 jogos em casa  
+> • Time visitante: últimos 5 jogos como visitante
 
 **1. Histórico**
-- Média de Gols totais: `Mínimo 3.0`
+- Média de Gols totais (últimos 5 jogos): `Mínimo 3.0`
 - Histórico de jogos abertos
 
 **2. Características**
@@ -569,34 +869,60 @@
 
 ## Bot 12 - Favorito Conservador
 
-### 📌 Configuração Básica
-1. **Nome do Bot:** `Favorito Conservador`
-2. **Mercado:** `Vitória do Favorito`
-3. **Odd Mínima:** `1.3`
-4. **Faixa de Entrada:** `60 a 80 minutos`
-5. **Filtro de Placar:** `Favorito vencendo OU empatado`
-6. **Gestão de Banca:** `2-3%`
+### 📋 Passo 1: Informações Básicas
 
-### ✅ Condições AO VIVO (Todas obrigatórias)
+**Mercado de Resultado:**
+- **Tipo:** Vitória do Favorito
+- **Como funciona:** O favorito deve vencer a partida
+
+**Nome do Bot:** `Favorito Conservador`
+
+### ⚙️ Passo 2: Configuração Essencial
+
+**Faixa de Minutos:**
+- **De:** 60
+- **Até:** 80
+- *Por quê?* Fase final onde o domínio do favorito está consolidado
+
+**Odd Mínima de Entrada:** 1.3
+- Se não configurar odd, o bot alertará em qualquer odd
+- Com odd 1.3, só alertará quando o mercado estiver nesta cotação ou superior
+
+**Valor de Entrada:** 0 (apenas alertas) ou defina seu valor
+- 0 = Apenas notificações, sem contabilizar lucro/prejuízo
+- [Seu valor] = Contabiliza ROI, lucro e prejuízo automaticamente
+
+**Filtro de Placar:** Favorito vencendo OU empatado
+- Favorito em vantagem ou controlando empate
+
+**Gestão de Banca:** 2-3% (Conservador)
+
+### 🎯 Passo 3: Condições
+
+#### ✅ Condições AO VIVO (Todas obrigatórias)
 
 **1. Placar**
 - Opção A: Favorito já vencendo (1x0, 2x0, 2x1)
 - Opção B: Empate com favorito dominando
 
 **2. Domínio do Favorito**
-- Posse de Bola Favorito: `Mínimo 55%`
-- Ataques Perigosos Favorito: `Mínimo 8`
-- Chutes no Gol Favorito: `Mínimo 4`
+- **Posse de Bola Favorito:** Mínimo 55%
+- **Ataques Perigosos Favorito:** Mínimo 8
+- **Chutes no Gol Favorito:** Mínimo 4
 
 **3. Pressão Ofensiva**
-- Barra de Pressão (favorito): `Mínimo 60%`
+- **Barra de Pressão (favorito):** Mínimo 60%
 - Favorito no campo de ataque
 
 **4. Visitante**
 - Visitante sem reação
-- Chutes visitante: `MÁXIMO 3`
+- **Chutes visitante:** MÁXIMO 3
 
-### 📊 Condições PRÉ-JOGO (Todas obrigatórias)
+#### 📊 Condições PRÉ-JOGO (Todas obrigatórias)
+
+> **Sobre as Médias H2H:** Calculadas com base nos últimos 5 jogos:  
+> • Time da casa: últimos 5 jogos em casa  
+> • Time visitante: últimos 5 jogos como visitante
 
 **1. Odds**
 - Odd do Favorito: `Entre 1.20 e 1.50` (claro favorito)
@@ -624,40 +950,66 @@
 
 ## Bot 13 - Favorito Agressivo (Virada)
 
-### 📌 Configuração Básica
-1. **Nome do Bot:** `Favorito Virada`
-2. **Mercado:** `Vitória do Favorito`
-3. **Odd Mínima:** `1.8`
-4. **Faixa de Entrada:** `55 a 75 minutos`
-5. **Filtro de Placar:** `Favorito perdendo por 1 gol`
-6. **Gestão de Banca:** `3-5%`
+### 📋 Passo 1: Informações Básicas
 
-### ✅ Condições AO VIVO (Todas obrigatórias)
+**Mercado de Resultado:**
+- **Tipo:** Vitória do Favorito
+- **Como funciona:** O favorito deve vencer a partida (virar o jogo)
+
+**Nome do Bot:** `Favorito Virada`
+
+### ⚙️ Passo 2: Configuração Essencial
+
+**Faixa de Minutos:**
+- **De:** 55
+- **Até:** 75
+- *Por quê?* Tempo ideal para virada - suficiente para reagir mas com urgência
+
+**Odd Mínima de Entrada:** 1.8
+- Se não configurar odd, o bot alertará em qualquer odd
+- Com odd 1.8, só alertará quando o mercado estiver nesta cotação ou superior
+
+**Valor de Entrada:** 0 (apenas alertas) ou defina seu valor
+- 0 = Apenas notificações, sem contabilizar lucro/prejuízo
+- [Seu valor] = Contabiliza ROI, lucro e prejuízo automaticamente
+
+**Filtro de Placar:** Favorito perdendo por 1 gol
+- Favorito em desvantagem mínima
+
+**Gestão de Banca:** 3-5% (Agressivo)
+
+### 🎯 Passo 3: Condições
+
+#### ✅ Condições AO VIVO (Todas obrigatórias)
 
 **1. Placar**
-- Favorito perdendo: `0x1 ou 1x2`
+- **Favorito perdendo:** 0x1 ou 1x2
 - Diferença de apenas 1 gol
 
 **2. Pressão Extrema do Favorito**
-- Posse de Bola Favorito: `Mínimo 65%`
-- Ataques Perigosos Favorito: `Mínimo 12`
-- Barra de Pressão: `Mínimo 70%`
+- **Posse de Bola Favorito:** Mínimo 65%
+- **Ataques Perigosos Favorito:** Mínimo 12
+- **Barra de Pressão:** Mínimo 70%
 
 **3. Finalizações**
-- Chutes no Gol Favorito: `Mínimo 6`
-- Grandes Chances Favorito: `Mínimo 3`
+- **Chutes no Gol Favorito:** Mínimo 6
+- **Grandes Chances Favorito:** Mínimo 3
 - Favorito bombardeando
 
 **4. Defesa Visitante**
 - Visitante apenas se defendendo
-- Defesas goleiro visitante: `Mínimo 5`
+- **Defesas goleiro visitante:** Mínimo 5
 - Visitante sem contra-ataques efetivos
 
 **5. Mudanças Táticas**
 - Substituições ofensivas feitas
 - All-in do favorito
 
-### 📊 Condições PRÉ-JOGO (Todas obrigatórias)
+#### 📊 Condições PRÉ-JOGO (Todas obrigatórias)
+
+> **Sobre as Médias H2H:** Calculadas com base nos últimos 5 jogos:  
+> • Time da casa: últimos 5 jogos em casa  
+> • Time visitante: últimos 5 jogos como visitante
 
 **1. Odds**
 - Odd do Favorito (pré-jogo): `MÁXIMO 1.40` (grande favorito)
@@ -684,23 +1036,45 @@
 
 ## Bot 14 - Visitante Moderado (Value)
 
-### 📌 Configuração Básica
-1. **Nome do Bot:** `Visitante Value`
-2. **Mercado:** `Vitória do Visitante`
-3. **Odd Mínima:** `2.0`
-4. **Faixa de Entrada:** `55 a 75 minutos`
-5. **Filtro de Placar:** `Visitante vencendo OU empatado`
-6. **Gestão de Banca:** `2-4%`
+### 📋 Passo 1: Informações Básicas
 
-### ✅ Condições AO VIVO (Todas obrigatórias)
+**Mercado de Resultado:**
+- **Tipo:** Vitória do Visitante
+- **Como funciona:** O visitante deve vencer a partida
+
+**Nome do Bot:** `Visitante Value`
+
+### ⚙️ Passo 2: Configuração Essencial
+
+**Faixa de Minutos:**
+- **De:** 55
+- **Até:** 75
+- *Por quê?* Tempo onde o visitante já consolidou vantagem ou está controlando
+
+**Odd Mínima de Entrada:** 2.0
+- Se não configurar odd, o bot alertará em qualquer odd
+- Com odd 2.0, só alertará quando o mercado estiver nesta cotação ou superior
+
+**Valor de Entrada:** 0 (apenas alertas) ou defina seu valor
+- 0 = Apenas notificações, sem contabilizar lucro/prejuízo
+- [Seu valor] = Contabiliza ROI, lucro e prejuízo automaticamente
+
+**Filtro de Placar:** Visitante vencendo OU empatado
+- Visitante em vantagem ou controlando empate
+
+**Gestão de Banca:** 2-4% (Moderado)
+
+### 🎯 Passo 3: Condições
+
+#### ✅ Condições AO VIVO (Todas obrigatórias)
 
 **1. Placar**
 - Opção A: Visitante vencendo (0x1, 0x2, 1x2)
 - Opção B: Empate com visitante defendendo bem
 
 **2. Organização Defensiva**
-- Defesas goleiro visitante: `Mínimo 4`
-- Chutes bloqueados visitante: `Mínimo 3`
+- **Defesas goleiro visitante:** Mínimo 4
+- **Chutes bloqueados visitante:** Mínimo 3
 - Defesa sólida do visitante
 
 **3. Eficiência do Visitante**
@@ -713,7 +1087,11 @@
 - Chutes no gol casa sem efetividade
 - Casa nervoso/ansioso
 
-### 📊 Condições PRÉ-JOGO (Todas obrigatórias)
+#### 📊 Condições PRÉ-JOGO (Todas obrigatórias)
+
+> **Sobre as Médias H2H:** Calculadas com base nos últimos 5 jogos:  
+> • Time da casa: últimos 5 jogos em casa  
+> • Time visitante: últimos 5 jogos como visitante
 
 **1. Odds**
 - Odd do Visitante: `Entre 2.50 e 4.00`

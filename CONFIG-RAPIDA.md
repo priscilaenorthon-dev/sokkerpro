@@ -1,6 +1,19 @@
 # ⚡ CONFIGURAÇÃO RÁPIDA - Bot Gol 1º Tempo
 
-## 🎯 PASSO 2: Configuração Essencial
+> **Seguindo o formato oficial do PDF SokkerPRO**
+
+## 📋 PASSO 1: Informações Básicas
+
+**Mercado de Gols:**
+- **Tipo:** Mais um gol até o fim do primeiro tempo
+- **Linha:** Over 0.5 Gols (1T)
+- **Como funciona:** Se o jogo está 0x0, precisa sair pelo menos 1 gol no primeiro tempo
+
+**Nome do Bot:** `Gol 1T Conservador` ou `Over 0.5 - 1T`
+
+---
+
+## ⚙️ PASSO 2: Configuração Essencial
 
 ```
 Faixa de Minutos

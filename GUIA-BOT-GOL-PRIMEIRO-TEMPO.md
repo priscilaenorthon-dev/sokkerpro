@@ -1,26 +1,54 @@
 # Bot SokkerPRO - Gol no Primeiro Tempo
 
-## 📋 Descrição
-Configuração otimizada de bot para o mercado **"Over 0.5 Gols no Primeiro Tempo"** (sair pelo menos 1 gol no primeiro tempo), focando em entradas entre os minutos 10 e 35 com odd mínima de 1.5.
+> **Seguindo o formato oficial do PDF SokkerPRO**
 
-## 🎯 Objetivo
-Identificar jogos ao vivo onde há alta probabilidade de sair um gol no primeiro tempo, baseando-se em:
-- Estatísticas ao vivo do jogo
-- Histórico recente dos times (H2H)
-- Prognósticos SokkerPRO validados
+## 📋 Passo 1: Informações Básicas
 
-## ⚙️ Configuração Principal
+**Mercado de Gols:**
+- **Tipo:** Mais um gol até o fim do primeiro tempo
+- **Linha:** Over 0.5 Gols (1T)
+- **Como funciona:** Se o jogo está 0x0, precisa sair pelo menos 1 gol no primeiro tempo
 
-### 1️⃣ Essencial
-- **Mercado:** Over 0.5 Gols (1T) - Sair gol no primeiro tempo
-- **Faixa de Minutos:** 10 até 35
-  - Por quê? Após o aquecimento inicial (0-10min) e com tempo suficiente antes do intervalo
-- **Odd Mínima:** 1.5
-- **Valor de Entrada:** 0 (apenas alertas) ou defina um valor para contabilizar lucro/prejuízo
-- **Filtro de Placar:** Empate (0x0)
-  - Jogos empatados tendem a abrir mais no primeiro tempo
+**Nome do Bot:** `Gol 1T Conservador` ou `Over 0.5 - 1T`
 
-### 2️⃣ Condições AO VIVO (Principais)
+---
+
+## ⚙️ Passo 2: Configuração Essencial
+
+### Faixa de Minutos
+- **De:** 10
+- **Até:** 35
+- **Por quê?** Após o aquecimento inicial (0-10min) e com tempo suficiente antes do intervalo
+
+### Odd Mínima de Entrada
+- **Valor:** 1.5
+- Se não configurar odd, o bot alertará em qualquer odd
+- Com odd 1.5, só alertará quando o mercado estiver nesta cotação ou superior
+
+### Valor de Entrada
+- **Opções:** 0 (apenas alertas) ou defina um valor
+- **0:** Apenas notificações, sem contabilizar lucro/prejuízo
+- **[Seu valor]:** Contabiliza ROI, lucro e prejuízo automaticamente
+
+### Filtro de Placar
+- **Configuração:** Empate (0x0)
+- **Motivo:** Jogos empatados tendem a abrir mais no primeiro tempo
+
+### Gestão de Banca
+- **Recomendado:** 1-2% da banca por entrada
+- **Máximo:** Nunca mais que 5% da banca
+
+---
+
+## 🎯 Passo 3: Condições
+
+### Condições AO VIVO
+
+> **Aplicação das condições:**  
+> - **Casa:** Apenas ao time da casa  
+> - **Visitante:** Apenas ao time visitante  
+> - **Ambos Somados:** Soma total dos dois times  
+> - **Qualquer Time:** Aplica a qualquer um dos times
 
 #### Ataques
 | Estatística | Aplicado a | Valor Mínimo | Motivo |

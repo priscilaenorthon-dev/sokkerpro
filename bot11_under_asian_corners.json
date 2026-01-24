@@ -1,0 +1,102 @@
+{
+  "nome": "Bot 11 - Under Escanteios Asiático - Jogos Controlados",
+  "descricao": "Bot para under de escanteios com proteção asiática. Busca jogos controlados com pouca dinâmica ofensiva onde não haverá muitos escanteios.",
+  
+  "passo1_informacoes_basicas": {
+    "mercado": "Sem mais escanteios (asiático) até o fim do primeiro tempo",
+    "tipo": "Under Escanteios Asiático",
+    "objetivo": "Jogos com baixo volume de escanteios, proteção se sair apenas mais um"
+  },
+  
+  "passo2_configuracao_essencial": {
+    "faixa_minutos": {
+      "de": 20,
+      "ate": 44,
+      "justificativa": "Entrada tardia no 1T quando padrão de poucos escanteios está confirmado"
+    },
+    "odd_minima_entrada": 1.60,
+    "valor_entrada": 50,
+    "filtro_placar": "Qualquer",
+    "comentario": "Under funciona independente do placar se jogo for controlado"
+  },
+  
+  "passo3_condicoes_ao_vivo": {
+    "aplicar_a": "Ambos Somados",
+    
+    "ataques": {
+      "ataques_perigosos_3min_maximo": 1.5,
+      "ataques_perigosos_5min_maximo": 1.2,
+      "ataques_totais_somados_maximo": 50,
+      "justificativa": "Baixa intensidade ofensiva"
+    },
+    
+    "escanteios": {
+      "escanteios_atual_maximo": 2,
+      "ritmo_escanteios": "Menos de 1 escanteio a cada 10 minutos",
+      "comentario": "Pouquíssimos escanteios até agora"
+    },
+    
+    "chutes": {
+      "chutes_bloqueados_somados_maximo": 2,
+      "total_chutes_somados_maximo": 10,
+      "chutes_fora_area_maximo": 3,
+      "justificativa": "Poucos chutes = poucos escanteios potenciais"
+    },
+    
+    "posse_passes": {
+      "percentual_passes_certos_minimo": 75,
+      "comentario": "Jogo controlado, pouco risco"
+    },
+    
+    "laterais": {
+      "laterais_somadas_maximo": 20,
+      "comentario": "Poucas jogadas pelas laterais"
+    },
+    
+    "outros": {
+      "tiro_meta_somados_maximo": 2,
+      "barra_pressao_maximo": 65,
+      "comentario": "Jogo sem grandes pressões"
+    }
+  },
+  
+  "passo3_condicoes_pre_jogo": {
+    "medias_h2h_escanteios": {
+      "media_escanteios_1t_maximo": 3.5,
+      "media_escanteios_jogo_completo_maximo": 8.5,
+      "comentario": "Histórico de poucos escanteios"
+    },
+    
+    "medias_h2h_ataques": {
+      "media_ataques_perigosos_1t_maximo": 18,
+      "comentario": "Times não muito ofensivos"
+    },
+    
+    "medias_h2h_chutes": {
+      "media_chutes_totais_1t_maximo": 8,
+      "comentario": "Poucas finalizações"
+    },
+    
+    "prognosticos": {
+      "prognostico_media_escanteios": "Under 9",
+      "comentario": "Baixa expectativa de escanteios"
+    }
+  },
+  
+  "criterios_entrada": {
+    "momento_ideal": "Minuto 25-40 do 1T com apenas 0-2 escanteios",
+    "odds_alvo": "1.60 a 2.20",
+    "gestao_banca": "4-5% do bankroll",
+    "saida": "Aguardar fim do 1T - proteção asiática",
+    "vantagem_asiatica": "Se sair exatamente mais 1 escanteio, devolve a aposta",
+    "perfil_jogo": "Jogos táticos, defesas bem postadas, meio-campo travado"
+  },
+  
+  "analise_mercado": {
+    "potencial_odds_altas": "Alto - Under asiático em escanteios: 1.75-2.40",
+    "risco": "Baixo - Proteção asiática + entrada tardia",
+    "winrate_estimado": "65-70% + 10% devolução",
+    "roi_estimado": "18-25%",
+    "notas": "Mercado pouco explorado, boas oportunidades"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "nome": "Bot 12 - Over 1.5 Gols 1T - Times Goleadores",
+  "descricao": "Bot agressivo para over 1.5 gols no primeiro tempo. Busca confrontos entre times muito ofensivos com histórico forte de gols no 1T. Odds muito altas.",
+  
+  "passo1_informacoes_basicas": {
+    "mercado": "Mais gols até o fim do primeiro tempo",
+    "tipo": "Over 1.5 Gols no 1T",
+    "objetivo": "Capturar jogos explosivos com múltiplos gols no primeiro tempo"
+  },
+  
+  "passo2_configuracao_essencial": {
+    "faixa_minutos": {
+      "de": 1,
+      "ate": 35,
+      "justificativa": "Entrada cedo para pegar odds altas, saída com tempo para gols"
+    },
+    "odd_minima_entrada": 2.50,
+    "valor_entrada": 50,
+    "filtro_placar": "Qualquer com máximo 1 gol",
+    "comentario": "Se 0x0, precisa 2 gols; se 1x0 ou 0x1, precisa mais 1 gol"
+  },
+  
+  "passo3_condicoes_ao_vivo": {
+    "aplicar_a": "Ambos Somados",
+    
+    "ataques": {
+      "ataques_perigosos_somados_minimo": 15,
+      "ataques_perigosos_1min_minimo": 2.0,
+      "ataques_perigosos_3min_minimo": 1.8,
+      "ataques_totais_somados_minimo": 50,
+      "justificativa": "Intensidade ofensiva extrema de ambos lados"
+    },
+    
+    "chutes": {
+      "chutes_no_gol_somados_minimo": 5,
+      "total_chutes_somados_minimo": 10,
+      "chutes_dentro_area_somados_minimo": 4,
+      "tentativas_gol_somadas_minimo": 6,
+      "justificativa": "Muitas finalizações perigosas de ambos lados"
+    },
+    
+    "escanteios": {
+      "escanteios_somados_minimo": 4,
+      "comentario": "Pressão ofensiva constante gerando escanteios"
+    },
+    
+    "posse_passes": {
+      "posse_equilibrada": "Entre 45-55% cada time",
+      "comentario": "Jogo aberto e equilibrado = mais chances de gols"
+    },
+    
+    "defesa": {
+      "defesas_goleiros_somadas_minimo": 4,
+      "desarmes_somados_minimo": 10,
+      "comentario": "Ambos goleiros trabalhando muito"
+    },
+    
+    "outros": {
+      "barra_pressao_qualquer_time_minimo": 70,
+      "comentario": "Pelo menos um time com pressão altíssima"
+    }
+  },
+  
+  "passo3_condicoes_pre_jogo": {
+    "medias_h2h_gols": {
+      "media_gols_1t_somada_minimo": 1.8,
+      "media_gols_1t_casa_minimo": 0.8,
+      "media_gols_1t_visitante_minimo": 0.8,
+      "comentario": "Histórico muito forte de gols no 1T"
+    },
+    
+    "medias_h2h_chutes": {
+      "media_chutes_ao_gol_1t_minimo": 5,
+      "media_chutes_totais_1t_minimo": 10,
+      "media_chutes_dentro_area_1t_minimo": 4,
+      "comentario": "Muitas finalizações no 1T historicamente"
+    },
+    
+    "medias_h2h_ataques": {
+      "media_ataques_perigosos_1t_minimo": 20,
+      "comentario": "Times muito ofensivos no 1T"
+    },
+    
+    "prognosticos": {
+      "prognostico_over_15_1t_minimo": 35,
+      "prognostico_over_05_1t_minimo": 65,
+      "prognostico_over_25_minimo": 55,
+      "prognostico_ambas_marcam_minimo": 60,
+      "comentario": "Alta probabilidade de jogo com muitos gols"
+    }
+  },
+  
+  "criterios_entrada": {
+    "momento_ideal_1": "Minuto 1-15 em 0x0 com ambos atacando furiosamente",
+    "momento_ideal_2": "Minuto 15-25 em 1x0 com perdedor pressionando muito",
+    "momento_nao_entrar": "Se defensivas bem postadas ou ritmo lento",
+    "odds_alvo": "2.50 a 5.00",
+    "gestao_banca": "2-3% do bankroll (alto risco, alta recompensa)",
+    "saida": "Aguardar fim 1T ou cash out se sair 2+ gols",
+    "perfil_jogo": "Clássicos, derbies, confrontos diretos entre times ofensivos"
+  },
+  
+  "analise_mercado": {
+    "potencial_odds_altas": "Altíssimo - Over 1.5 no 1T pode ter odds 3.00-6.00",
+    "risco": "Alto - Precisa de 2+ gols no 1T",
+    "winrate_estimado": "40-45%",
+    "roi_estimado": "30-50%",
+    "notas": "Mercado de alto risco e alta recompensa. Selecionar jogos com muito critério. Odds excepcionais compensam winrate menor. Perfeito para apostas de valor.",
+    "quando_usar": "Apenas em jogos com TODAS as condições atendidas"
+  }
+}

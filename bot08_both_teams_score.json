@@ -1,0 +1,105 @@
+{
+  "nome": "Bot 08 - Ambas Marcam - Jogos Ofensivos",
+  "descricao": "Bot especializado em identificar jogos onde ambos times têm alta probabilidade de marcar. Busca confrontos abertos com ambos ataques funcionando.",
+  
+  "passo1_informacoes_basicas": {
+    "mercado": "Ambas as Equipes Marcam (BTTS - Both Teams To Score)",
+    "tipo": "Sim - Ambas Marcam",
+    "objetivo": "Identificar jogos com ambos times finalizando e criando chances reais"
+  },
+  
+  "passo2_configuracao_essencial": {
+    "faixa_minutos": {
+      "de": 5,
+      "ate": 70,
+      "justificativa": "Acompanha jogo desde cedo até quase o final"
+    },
+    "odd_minima_entrada": 1.65,
+    "valor_entrada": 50,
+    "filtro_placar": "Qualquer",
+    "comentario": "Funciona em qualquer placar, ideal se já tiver 1x0 ou 0x1"
+  },
+  
+  "passo3_condicoes_ao_vivo": {
+    "aplicar_a": "Qualquer Time",
+    
+    "ataques": {
+      "ataques_perigosos_casa_minimo": 5,
+      "ataques_perigosos_visitante_minimo": 5,
+      "ataques_perigosos_3min_casa_minimo": 0.8,
+      "ataques_perigosos_3min_visitante_minimo": 0.8,
+      "justificativa": "AMBOS times atacando perigosamente"
+    },
+    
+    "chutes": {
+      "chutes_no_gol_casa_minimo": 2,
+      "chutes_no_gol_visitante_minimo": 2,
+      "total_chutes_casa_minimo": 4,
+      "total_chutes_visitante_minimo": 4,
+      "chutes_dentro_area_casa_minimo": 1,
+      "chutes_dentro_area_visitante_minimo": 1,
+      "justificativa": "Ambos finalizando e criando perigo real"
+    },
+    
+    "escanteios": {
+      "escanteios_casa_minimo": 2,
+      "escanteios_visitante_minimo": 2,
+      "comentario": "Ambos pressionando = ambos podem marcar"
+    },
+    
+    "posse_passes": {
+      "posse_bola_equilibrio": "Entre 40-60% cada",
+      "comentario": "Jogo equilibrado, ambos com bola"
+    },
+    
+    "outros": {
+      "defesas_goleiro_casa_minimo": 1,
+      "defesas_goleiro_visitante_minimo": 1,
+      "comentario": "Ambos goleiros trabalhando = ambos em perigo"
+    }
+  },
+  
+  "passo3_condicoes_pre_jogo": {
+    "medias_h2h_gols": {
+      "media_gols_casa_minimo": 1.2,
+      "media_gols_visitante_minimo": 1.0,
+      "comentario": "Ambos marcam regularmente"
+    },
+    
+    "medias_h2h_chutes": {
+      "media_chutes_ao_gol_casa_minimo": 3,
+      "media_chutes_ao_gol_visitante_minimo": 3,
+      "comentario": "Ambos finalizam bem"
+    },
+    
+    "medias_h2h_defesa": {
+      "media_defesas_goleiro_casa_minimo": 2.5,
+      "media_defesas_goleiro_visitante_minimo": 2.5,
+      "comentario": "Ambas defesas sofrem pressão"
+    },
+    
+    "prognosticos": {
+      "prognostico_ambas_marcam_sim_minimo": 50,
+      "prognostico_over_15_minimo": 60,
+      "prognostico_over_25_minimo": 40,
+      "comentario": "Alta probabilidade de gols de ambos lados"
+    }
+  },
+  
+  "criterios_entrada": {
+    "momento_ideal": "Minuto 10-30 quando ambos mostraram capacidade ofensiva",
+    "cenario_ideal_1": "1x0 ou 0x1 e time perdendo pressionando muito",
+    "cenario_ideal_2": "0x0 com ambos atacando fortemente",
+    "odds_alvo": "1.65 a 2.30",
+    "gestao_banca": "3-4% do bankroll",
+    "saida": "Aguardar fim do jogo ou cash out se ambos marcarem cedo"
+  },
+  
+  "analise_mercado": {
+    "potencial_odds_altas": "Alto - BTTS pode dar 1.80-2.50 dependendo do jogo",
+    "risco": "Médio - Precisa de dois eventos (ambos marcarem)",
+    "winrate_estimado": "60-65%",
+    "roi_estimado": "18-25%",
+    "dica": "Melhor em jogos 1x0 onde perdedor está atacando muito"
+  }
+}

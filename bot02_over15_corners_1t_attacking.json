@@ -1,0 +1,94 @@
+{
+  "nome": "Bot 02 - Over 1.5 Escanteios 1T - Times Ofensivos",
+  "descricao": "Bot especializado em escanteios no primeiro tempo. Identifica partidas com times que geram muitos escanteios através de pressão lateral e ataques constantes.",
+  
+  "passo1_informacoes_basicas": {
+    "mercado": "Mais um escanteio até o fim do primeiro tempo",
+    "tipo": "Over 1.5 Escanteios no 1T",
+    "objetivo": "Capturar jogos onde times pressionam pelas laterais gerando escanteios"
+  },
+  
+  "passo2_configuracao_essencial": {
+    "faixa_minutos": {
+      "de": 10,
+      "ate": 40,
+      "justificativa": "Aguarda padrão de jogo se estabelecer, com tempo para converter escanteios"
+    },
+    "odd_minima_entrada": 1.55,
+    "valor_entrada": 50,
+    "filtro_placar": "Qualquer",
+    "comentario": "Escanteios não dependem tanto do placar, mas da pressão ofensiva"
+  },
+  
+  "passo3_condicoes_ao_vivo": {
+    "aplicar_a": "Ambos Somados",
+    
+    "ataques": {
+      "ataques_totais_minimo": 35,
+      "ataques_perigosos_minimo": 12,
+      "ataques_perigosos_5min_minimo": 1.0,
+      "justificativa": "Ataques constantes pelas laterais geram escanteios"
+    },
+    
+    "escanteios": {
+      "escanteios_atual": 1,
+      "comentario": "Já tem pelo menos 1 escanteio, precisa mais um para fechar over 1.5"
+    },
+    
+    "chutes": {
+      "chutes_bloqueados_minimo": 2,
+      "total_chutes_minimo": 8,
+      "justificativa": "Chutes bloqueados frequentemente resultam em escanteios"
+    },
+    
+    "posse_passes": {
+      "posse_bola_time_atacante_minimo": 45,
+      "comentario": "Time com bola gera mais oportunidades de escanteio"
+    },
+    
+    "outros": {
+      "barra_pressao_minimo": 65,
+      "laterais_minimo": 15,
+      "comentario": "Jogo dinâmico com muitas laterais indica chance de escanteios"
+    }
+  },
+  
+  "passo3_condicoes_pre_jogo": {
+    "medias_h2h_escanteios": {
+      "media_escanteios_1t_somada_minimo": 3.5,
+      "media_escanteios_casa_1t_minimo": 1.5,
+      "media_escanteios_visitante_1t_minimo": 1.5,
+      "justificativa": "Histórico forte de escanteios no primeiro tempo"
+    },
+    
+    "medias_h2h_ataques": {
+      "media_ataques_1t_minimo": 35,
+      "media_ataques_perigosos_1t_minimo": 12,
+      "comentario": "Times com padrão ofensivo geram escanteios"
+    },
+    
+    "medias_h2h_chutes": {
+      "media_chutes_totais_1t_minimo": 7,
+      "comentario": "Muitos chutes aumentam probabilidade de escanteios"
+    },
+    
+    "prognosticos": {
+      "prognostico_media_escanteios": "Over 9",
+      "comentario": "Média alta de escanteios no jogo completo indica potencial no 1T"
+    }
+  },
+  
+  "criterios_entrada": {
+    "momento_ideal": "10-25 minutos com 1 escanteio já convertido e pressão constante",
+    "odds_alvo": "1.55 a 2.00",
+    "gestao_banca": "3-4% do bankroll",
+    "saida": "Aguardar fim 1T ou cash out após segundo escanteio"
+  },
+  
+  "analise_mercado": {
+    "potencial_odds_altas": "Muito Alto - Over 1.5 corners pode ter odds 1.70-2.20 quando tem apenas 1",
+    "risco": "Médio-Baixo - Escanteios são mais previsíveis que gols",
+    "winrate_estimado": "65-70%",
+    "roi_estimado": "18-25%"
+  }
+}
